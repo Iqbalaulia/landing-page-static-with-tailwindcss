@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page</title>
+      <link href="/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="https://flowbite.com/" class="flex items-center">
+            <img src="./src/assets/logo/rb_logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
+        </a>
+        <div class="flex items-center md:order-2">
+            <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+              <svg class="w-5 h-5 mr-2 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900"><path fill="#b22234" d="M0 0h7410v3900H0z"/><path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"/><path fill="#3c3b6e" d="M0 0h2964v2100H0z"/><g fill="#fff"><g id="d"><g id="c"><g id="e"><g id="b"><path id="a" d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"/><use xlink:href="#a" y="420"/><use xlink:href="#a" y="840"/><use xlink:href="#a" y="1260"/></g><use xlink:href="#a" y="1680"/></g><use xlink:href="#b" x="247" y="210"/></g><use xlink:href="#c" x="494"/></g><use xlink:href="#d" x="988"/><use xlink:href="#c" x="1976"/><use xlink:href="#e" x="2470"/></g></svg>
+              EN
+              <svg class="ml-2 w-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+              </svg>
+            </button>
+            <div class="mr-2 w-0.5 h-5 bg-bs-line"></div>
+            <button type="button" class="text-bs-black-primary bg-white border border-bs-black-primary focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-bold rounded-lg text-sm px-5 py-2.5  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Buy Now</button>
+            <!-- Dropdown -->
+            <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700" id="language-dropdown-menu">
+              <ul class="py-2 font-medium" role="none">
+                <li>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                    <div class="inline-flex items-center">
+                      <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512"><g fill-rule="evenodd"><g stroke-width="1pt"><path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/><path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/></g><path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"/><path fill="#fff" d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z" transform="scale(3.9385)"/></g></svg>              
+                      EN
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                    <div class="inline-flex items-center">
+                      <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512"><path fill="#ffce00" d="M0 341.3h512V512H0z"/><path d="M0 0h512v170.7H0z"/><path fill="#d00" d="M0 170.7h512v170.6H0z"/></svg>
+                      Deutsch
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                    <div class="inline-flex items-center">
+                      <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512"><g fill-rule="evenodd" stroke-width="1pt"><path fill="#fff" d="M0 0h512v512H0z"/><path fill="#009246" d="M0 0h170.7v512H0z"/><path fill="#ce2b37" d="M341.3 0H512v512H341.3z"/></g></svg>              
+                      Italiano
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                    <div class="inline-flex items-center">
+                      <svg class="h-3.5 w-3.5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512"><defs><path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z"/></defs><path fill="#de2910" d="M0 0h512v512H0z"/><use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a"/><use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a"/></svg>
+                      中文
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button data-collapse-toggle="mobile-menu-language-select" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-language-select" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="currentColor" aria-hidden="true" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+        </div>
+        
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="mobile-menu-language-select">
+          <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-white bg-bs-orange-primary rounded md:bg-transparent md:text-bs-orange-primary md:p-0 md:dark:text-bs-orange-primary" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Our Service</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Order Now</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact Us</a>
+              
+            </li>
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      <section class="container mx-auto p-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 items-center">
+      <div class="information col-span-2">
+        <h1 class="text-6xl font-bold ">
+          We will rank your Etsy <br>
+          products within 30 days. <br> Guaranteed.
+        </h1>
+
+          <ul class="max-w-md space-y-3 text-gray-500 list-inside dark:text-gray-400 mt-4">
+              <li class="flex items-center font-medium text-bs-black-primary" >
+                 <img src="./src/assets/icons/ic_check_circle.svg" class="w-5 h-5 mr-1.5" alt="Flowbite Logo" />
+                 Rank page 1 on Etsy.com 🚀
+              </li>
+              <li class="flex items-center font-medium text-bs-black-primary">
+                <img src="./src/assets/icons/ic_check_circle.svg" class="w-5 h-5 mr-1.5" alt="Flowbite Logo" />
+                100% Money back Guarantee 🙂
+              </li>
+              <li class="flex items-center font-medium text-bs-black-primary">
+                 <img src="./src/assets/icons/ic_check_circle.svg" class="w-5 h-5 mr-1.5" alt="Flowbite Logo" />
+                 Instant Results ⚡
+              </li>
+          </ul>
+
+
+          <div class="order flex items-center mt-6 gap-5">
+            <button type="button" class=" text-bs-white-primary bg-bs-black-primary border border-bs-black-primary focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-bold rounded-lg text-sm px-5 py-2.5  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Order Now</button>
+            <a href="" class="font-semibold text-bs-black-primary underline underline-offset-4">Or have a live chat with us >></a>
+          </div>
+
+      </div>
+      <!-- ... -->
+      <div class="images">
+        <img class="h-2/6	max-w-full w-full" alt="banner-images" src="./src/assets/images/rb_image_people-1.png">
+      </div>
+    </div>
+  </section>
+
+  <section class="security-trust container mx-auto p-4">
+    <div class="text-center text-bs-black-primary font-semibold	mb-7">
+      Security and Trust
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-10">
+      <div>
+          <img class="h-full	max-w-full w-full" alt="icon cloudfare" src="./src/assets/logo/ic_cloudflare.svg">
+      </div>
+      <div>
+          <img class="h-full	max-w-full w-full" alt="icon money back" src="./src/assets/logo/ic_moneyback.svg">
+      </div>
+       <div>
+          <img class="h-full	max-w-full w-full" alt="icon top rated" src="./src/assets/logo/ic_toprated.svg" >
+      </div>
+       <div>
+          <img class="h-full	max-w-full w-full" alt="icon ssl" src="./src/assets/logo/ic_ssl.svg">
+      </div>
+        <div>
+          <img class="h-full	max-w-full w-full" alt="icon trust pilot" src="./src/assets/logo/ic_trustpilot.svg">
+      </div>
+       <div>
+          <img class="h-full	max-w-full w-full" alt="icon woocommerce" src="./src/assets/logo/ic_woocommerce.svg">
+      </div>
+    </div>
+  </section>
+
+  <section class="whats-its container mx-auto p-4 mt-8 mb-20">
+     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 items-center">
+       <div class="images">
+        <img class="h-2/6	max-w-full w-full" alt="banner-images" src="./src/assets/images/rb_image_people-2.png">
+      </div>
+      <div class="information">
+        <h2 class="text-6xl font-semibold ">
+         What is Etsy Geeks All About?
+        </h2>
+
+         <p class="text-bs-black-secondary text-xl font-normal mt-8">
+          Etsy Geeks was started by Etsy sellers who struggled to generate sales on the platform due to their products’ low visibility. The frustration of not getting seen on Etsy led us to look for ways to rank our products. That is how we became Etsy SEO Specialists.
+         </p>
+         <p class="text-bs-black-secondary text-xl font-normal mt-4">
+          We understand Etsy’s inner workings, having ranked 50+ of our products in the Etsy top 10 before deciding to offer this service to other Etsy sellers.
+         </p>
+         <p class="text-bs-black-secondary text-xl font-normal mt-4">
+          With Etsy Geeks, you don’t have to be an SEO pro to rank higher and get more traffic on the
+          Etsy marketplace!
+         </p>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 items-center mt-8">
+     <div class="bg-white pr-8 pb-8 pt-8">
+       <label for="" class="text-3xl font-semibold	">What is Etsy Geeks All About?</label>
+     </div>
+     <div class="p-8 bg-bs-background-bg_1 rounded-xl text-center 	">
+      <label for="" class="text-bs-orange-primary text-3xl font-semibold">95%+Ranking Success</label>
+      <p class="text-lg text-bs-black-secondary font-medium	">Good history of ranking</p>
+     </div>
+     <div class="p-8 bg-bs-background-bg_1 rounded-xl	 text-center">
+      <label  class="text-bs-orange-primary text-3xl font-semibold">No Forced Subscription</label>
+      <p  class="text-lg text-bs-black-secondary font-medium	">No contract</p>
+     </div>
+      <div class="p-8 bg-bs-background-bg_1 rounded-xl	 text-center">
+      <label  class="text-bs-orange-primary text-3xl font-semibold">Reliable and Trushworthy</label>
+      <p  class="text-lg text-bs-black-secondary font-medium	">Happy clients</p>
+     </div>
+    </div>
+  </section>
+
+  <section class="benefits bg-bs-background-bg_1 ">
+    <div class="container mx-auto p-4">
+      <h2 class="text-center font-semibold text-5xl mt-8">Our Benefit</h2>
+      <div class="card-information">
+         <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 items-center">
+            <div class="max-w-sm p-6 bg-white h-full		rounded-xl">
+               <label for="" class="text-bs-black-primary font-semibold text-3xl">Money-Back Guarantee</label>
+                <p class="mb-3 font-normal text-bs-black-secondary text-lg leading-6 mt-4">If your product is not ranked in the Etsy top 10 in its niche within the agreed time frame, you get your money back. We are the only Etsy ranking service with a refund policy, but we are so sure of our service we doubt you'll ask for a refund.</p>
+                <img class="mt-7" src="./src/assets/images/rb_image_money.png" alt="money">
+            </div> 
+             <div class="max-w-sm p-6 sm:relative bg-white h-full	 rounded-xl">
+               <label for="" class="text-bs-black-primary font-semibold text-3xl">Total Privacy</label>
+                <p class="mb-3 font-normal text-bs-black-secondary text-lg leading-6 mt-4">We don't require access to your Etsy account to rank your products. You, therefore, don't have to share your Etsy store passwords with us.</p>
+                <img class="mt-7 sm:absolute sm:bottom-5" src="./src/assets/images/rb_image_shield.png" alt="money">
+            </div> 
+             <div class="max-w-sm p-6 sm:relative bg-white h-full	 rounded-xl">
+               <label for="" class="text-bs-black-primary font-semibold text-3xl">No Account Bans</label>
+                <p class="mb-3 font-normal text-bs-black-secondary text-lg leading-6 mt-4">We employ ethical techniques like using SEO-rich keywords to rank your products top on Etsy search results. So users of our service have never had their stores banned because unethical means were used to rank them better.</p>
+                <img class="mt-7 sm:absolute sm:bottom-5" src="./src/assets/images/rb_image_userlock.png" alt="money">
+            </div>   
+         </div>
+         <div class="text-center">
+              <button type="button" class="text-bs-white-primary bg-bs-black-primary border border-bs-black-primary focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-bold rounded-lg text-sm px-5 py-2.5  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 mt-10">Start your Campaign! </button>
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="get-service bg-bs-background-bg_1 pt-5 pb-5">
+    <div class="container mx-auto p-4">
+      <h2 class="text-center text-bs-black-primary font-semibold text-5xl">
+        What You Will Get From Our Etsy 
+        <br>
+        Ranking Service
+
+      </h2>
+      <div class="content">
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 items-center">
+           <div class="max-w-sm p-6 hover:bg-white h-full	rounded-xl">
+               <img class="mb-5" src="./src/assets/icons/ic_award.svg" alt="money">
+               <label for="" class="text-bs-black-primary font-semibold text-2xl">Fast Etsy Ranking</label>
+                <p class="mb-3 font-normal text-bs-black-secondary text-lg leading-6 mt-4">Normally, your product will start ranking on the position between 1 and 50 within 21 after your campaign has started.</p>
+            </div>
+            <div class="max-w-sm p-6 hover:bg-white h-full	rounded-xl">
+               <img class="mb-5" src="./src/assets/icons/ic_status-up.svg" alt="money">
+               <label for="" class="text-bs-black-primary font-semibold text-2xl">More Traffic</label>
+                <p class="mb-3 font-normal text-bs-black-secondary text-lg leading-6 mt-4">As your Etsy product begins to rank higher, the increased visibility should increase visitors’ numbers to your store.</p>
+            </div> 
+            <div class="max-w-sm p-6 hover:bg-white h-full	rounded-xl">
+               <img class="mb-5" src="./src/assets/icons/ic_shield-search.svg" alt="money">
+               <label for="" class="text-bs-black-primary font-semibold text-2xl">More Trust and Authority</label>
+                <p class="mb-3 font-normal text-bs-black-secondary text-lg leading-6 mt-4">When you reach the top of Etsy search results, your customers will see you as the authority within your product niche. This can result in more leads and sales.</p>
+            </div> 
+            <div class="max-w-sm p-6 hover:bg-white h-full	rounded-xl">
+               <img class="mb-5" src="./src/assets/icons/ic_global.svg" alt="money">
+               <label for="" class="text-bs-black-primary font-semibold text-2xl">Universal Results</label>
+                <p class="mb-3 font-normal text-bs-black-secondary text-lg leading-6 mt-4">We can rank any product sold on Etsy. So it doesn’t matter to us where in the world your Etsy store is based or the niche you operate in. We can get your product a higher ranking on Etsy.</p>
+            </div> 
+            <div class="max-w-sm p-6 hover:bg-white h-full	rounded-xl">
+               <img class="mb-5" src="./src/assets/icons/ic_like-shapes.svg" alt="money">
+               <label for="" class="text-bs-black-primary font-semibold text-2xl">Monthly Top Etsy Ranking</label>
+                <p class="mb-3 font-normal text-bs-black-secondary text-lg leading-6 mt-4">Normally, your product will start ranking on the position between 1 and 50 within 21 after your campaign has started.</p>
+            </div> 
+            <div class="max-w-sm p-6 hover:bg-white h-full	rounded-xl">
+               <img class="mb-5" src="./src/assets/icons/ic_calculator.svg" alt="money">
+               <label for="" class="text-bs-black-primary font-semibold text-2xl">Bulk Discounts</label>
+                <p class="mb-3 font-normal text-bs-black-secondary text-lg leading-6 mt-4">Use our service to rank more of your Etsy store products, and you’ll pay less.</p>
+            </div>  
+        </div>
+      </div>
+     
+    </div>
+  </section>
+
+  <section class="frequently bg-bs-white-primary pb-10">
+    <div class="container mx-auto p-4 mt-10">
+      <h2 class="text-center text-bs-black-primary font-semibold text-5xl	">Frequently <br/> asked questions.</h2>
+      <div class="mb-2 mt-6">
+          <ul class="flex flex-wrap -mb-px text-sm font-medium text-center justify-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+              <li class="mr-2" role="presentation">
+                  <button class="inline-block text-bs-black-primary border-bs-black-primary hover:text-bs-black-primary pl-4 pr-4 pt-2 pb-2 border rounded-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">General</button>
+              </li>
+              <li class="mr-2" role="presentation">
+                  <button class="inline-block text-bs-black-primary border-bs-black-primary hover:text-bs-black-primary pl-4 pr-4 pt-2 pb-2 border rounded-lg" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Company</button>
+              </li>
+              <li class="mr-2" role="presentation">
+                  <button class="inline-block text-bs-black-primary border-bs-black-primary hover:text-bs-black-primary pl-4 pr-4 pt-2 pb-2 border rounded-lg" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Product</button>
+              </li>
+              <li role="presentation">
+                  <button class="inline-block text-bs-black-primary border-bs-black-primary hover:text-bs-black-primary pl-4 pr-4 pt-2 pb-2 border rounded-lg" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Other</button>
+              </li>
+          </ul>
+      </div>
+      <div class="flex items-center justify-center">
+          <div class="w-1/2	justify-center" id="myTabContent">
+              <div class="hidden p-4 rounded-lg bg-bs-white-primary dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
+                  <h2 id="accordion-flush-heading-1">
+                    <button type="button" class="flex items-center justify-between w-full py-5 font-semibold text-left text-bs-black-primary border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+                      <span>What is Etsy</span>
+                      <svg fill="none" stroke="currentColor"  class="w-6 h-6 rotate-180 shrink-0" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                      </svg>
+                    
+                    </button>
+                  </h2>
+                  <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                    <div class="py-2 border-b border-gray-200 dark:border-gray-700">
+                      <p class="mb-2 text-bs-black-secondary font-normal leading-6	">Odio aliquam arcu arcu dictumst justo eu placerat ornare purus. Quam ultrices felis amet eu mauris. Odio aliquam arcu arcu dictumst.</p>
+                    </div>
+                  </div>
+                  <h2 id="accordion-flush-heading-2">
+                    <button type="button" class="flex items-center justify-between w-full py-5 font-semibold text-left text-bs-black-primary border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                      <span>Am I in risk for using this service?</span>
+                       <svg fill="none" stroke="currentColor"  class="w-6 h-6 rotate-180 shrink-0" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                      </svg>                    
+                    </button>
+                  </h2>
+                  <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                     <div class="py-2 border-b border-gray-200 dark:border-gray-700">
+                      <p class="mb-2 text-bs-black-secondary font-normal leading-6	">Odio aliquam arcu arcu dictumst justo eu placerat ornare purus. Quam ultrices felis amet eu mauris. Odio aliquam arcu arcu dictumst.</p>
+                    </div>
+                  </div>
+                  <h2 id="accordion-flush-heading-3">
+                    <button type="button" class="flex items-center justify-between w-full py-5 font-semibold text-left text-bs-black-primary border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                      <span>What are the differences between Flowbite and Tailwind UI?</span>
+                        <svg fill="none" stroke="currentColor"  class="w-6 h-6 rotate-180 shrink-0" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                      </svg> 
+                    </button>
+                  </h2>
+                  <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                    <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-bs-black-secondary font-normal leading-6	">Odio aliquam arcu arcu dictumst justo eu placerat ornare purus. Quam ultrices felis amet eu mauris. Odio aliquam arcu arcu dictumst.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="hidden p-4 rounded-lg bg-bs-white-primary dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+              </div>
+              <div class="hidden p-4 rounded-lg bg-bs-white-primary dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                  <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+              </div>
+              <div class="hidden p-4 rounded-lg bg-bs-white-primary dark:bg-gray-800" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                  <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="teams bg-bs-white-primary pb-10">
+    <div class="container mx-auto p-4 mt-10">
+      <h2 class="text-center text-bs-black-primary font-semibold text-5xl">Meet Our Meet</h2>
+      <p for="" class="text-center mt-4 text-bs-black-secondary font-normal text-lg	leading-6	">Contact us and let us help you with your queries. We're Etsy Experts and available from <br/> Monday to Friday via E-mail, live chat and phone.</p>
+
+      <div class="content">
+          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4 mt-10 items-center">
+            <div class="max-w-sm p-6 hover:bg-white h-full	rounded-xl">
+               <div class="bg-bs-background-bg_1 flex justify-center rounded-2xl p-10 mb-4">
+                  <img class="" src="./src/assets/images/rb_images_avatar.png" alt="money">
+               </div>
+               <label for="" class="text-bs-black-primary font-semibold text-2xl">Stevano William</label>
+               <p class="font-medium text-bs-black-secondary text-lg">CEO & Founder</p>
+            </div>
+             <div class="max-w-sm p-6 hover:bg-white h-full	rounded-xl">
+               <div class="bg-bs-background-bg_1 flex justify-center rounded-2xl p-10 mb-4">
+                  <img class="" src="./src/assets/images/rb_images_avatar-2.png" alt="money">
+               </div>
+               <label for="" class="text-bs-black-primary font-semibold text-2xl">Stevano William</label>
+               <p class="font-medium text-bs-black-secondary text-lg">Product Manager</p>
+            </div>
+             <div class="max-w-sm p-6 hover:bg-white h-full	rounded-xl">
+               <div class="bg-bs-background-bg_1 flex justify-center rounded-2xl p-10 mb-4">
+                  <img class="" src="./src/assets/images/rb_images_avatar-3.png" alt="money">
+               </div>
+               <label for="" class="text-bs-black-primary font-semibold text-2xl">Stevano William</label>
+               <p class="font-medium text-bs-black-secondary text-lg">Product Designer</p>
+            </div>
+             <div class="max-w-sm p-6 hover:bg-white h-full	rounded-xl">
+               <div class="bg-bs-background-bg_1 flex justify-center rounded-2xl p-10 mb-4">
+                  <img class="" src="./src/assets/images/rb_images_avatar-4.png" alt="money">
+               </div>
+               <label for="" class="text-bs-black-primary font-semibold text-2xl">Stevano William</label>
+               <p class="font-medium text-bs-black-secondary text-lg">Business Marketing</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="we-work bg-bs-white-primary pb-10">
+    <div class="container mx-auto p-4 sm:p-4 md:p-10 lg:-10 xl:p1-10 mt-10">
+      <div class="content">
+          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10">
+            <div class="col-span-2">
+              <h2 class=" text-bs-black-primary font-semibold text-5xl">Who Do We <br/> Work With?</h2>
+              <p for="" class=" mt-4 text-bs-black-secondary font-normal text-lg	leading-6	">Odio aliquam arcu arcu dictumst justo eu placerat ornare <br/> purus. Quam ultrices felis amet eu mauris. </p>
+            </div>
+             <div class="w-full">
+               <div class="bg-bs-background-bg_1 flex justify-start  rounded-xl mb-4 p-4">
+                  <div class="flex items-center gap-4">
+                    <img class="" src="./src/assets/icons/ic_fast.svg" alt="money">
+                    <label for=""  class="font-semibold text-bs-black-primary text-3xl	">Fast Etsy Ranking</label>
+                  </div>
+               </div>
+              <div class="bg-bs-background-bg_1 flex justify-start rounded-xl mb-4 p-4">
+                  <div class="flex items-center gap-4">
+                    <img class="" src="./src/assets/icons/ic_artist.svg" alt="money">
+                    <label for=""  class="font-semibold text-bs-black-primary text-3xl	">Artists</label>
+                  </div>
+               </div>
+                <div class="bg-bs-background-bg_1 flex justify-start rounded-xl mb-4 p-4">
+                  <div class="flex items-center gap-4">
+                    <img class="" src="./src/assets/icons/ic_pen-tool.svg" alt="money">
+                    <label for="" class="font-semibold text-bs-black-primary text-3xl	">Designers</label>
+                  </div>
+               </div>
+            </div>
+        
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="success-story bg-bs-background-bg_1 pb-10 pt-10">
+    <div class="container mx-auto p-4 sm:p-4 md:p-10 lg:-10 xl:p1-10 mt-10">
+      <div id="success-story" class="relative w-full" data-carousel="slide">
+        
+        <div class="header-title flex justify-between items-center mb-10">
+            <div class="title">
+                <h2 for="" class="text-bs-black-primary font-semibold	text-5xl	">Etsy Geeks Case Studies and <br> Success Stories</h2>
+            </div>
+            <div class="flex justify-center items-center pt-4">
+                  <button type="button" class="flex rounded-xl hover:border-current		 border p-2 justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                              <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                                  <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+                                  <span class="sr-only">Previous</span>
+                              </span>
+                          </button>
+                <button type="button" class="flex rounded-xl hover:border-current		border p-2 justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                              <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                                  <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                  <span class="sr-only">Next</span>
+                              </span>
+                </button>          
+            </div>
+        </div>
+
+       <!-- Carousel wrapper -->
+          <div class="relative h-full overflow-hidden rounded-lg md:h-[32rem]">
+              <!-- Item 1 -->
+               <div class="hidden duration-1000  ease-in-out" data-carousel-item>
+                      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 items-center">
+                        <div class="block max-w-sm p-8 bg-white shadow-lg shadow-indigo-500/40 rounded-lg  hover:bg-gray-100 ">
+                            <img src="./src/assets/images/rb_images_success_story-1.png" class="w-full h-[180px] mb-4" alt="">
+                           
+                            <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
+                            <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
+                            <div class="flex justify-start mt-[32px]">
+                              <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
+                                <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                              </svg>
+                              </a>
+                            </div>
+                        </div>
+                         <div class="block max-w-sm p-8 bg-white shadow-lg shadow-indigo-500/40 rounded-lg  hover:bg-gray-100 ">
+                            <img src="./src/assets/images/rb_images_success_story-2.png" class="w-full h-[180px] mb-4" alt="">
+                           
+                            <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
+                            <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
+                            <div class="flex justify-start mt-[32px]">
+                              <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
+                                <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                              </svg>
+                              </a>
+                            </div>
+                        </div>
+                         <div class="block max-w-sm p-8 bg-white shadow-lg shadow-indigo-500/40 rounded-lg  hover:bg-gray-100 ">
+                            <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[180px] mb-4" alt="">
+                           
+                            <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
+                            <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
+                            <div class="flex justify-start mt-[32px]">
+                              <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
+                                <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                              </svg>
+                              </a>
+                            </div>
+                        </div>
+                       
+                      </div>
+                </div>
+              <div class="hidden duration-1000  ease-in-out" data-carousel-item>
+                      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 items-center">
+                        <div class="block max-w-sm p-8 bg-white shadow-lg shadow-indigo-500/40 rounded-lg  hover:bg-gray-100 ">
+                            <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[180px] mb-4" alt="">
+                           
+                            <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
+                            <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
+                            <div class="flex justify-start mt-[32px]">
+                              <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
+                                <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                              </svg>
+                              </a>
+                            </div>
+                        </div>
+                         <div class="block max-w-sm p-8 bg-white shadow-lg shadow-indigo-500/40 rounded-lg  hover:bg-gray-100 ">
+                            <img src="./src/assets/images/rb_images_success_story-1.png" class="w-full h-[180px] mb-4" alt="">
+                           
+                            <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
+                            <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
+                            <div class="flex justify-start mt-[32px]">
+                              <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
+                                <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                              </svg>
+                              </a>
+                            </div>
+                        </div>
+                         <div class="block max-w-sm p-8 bg-white shadow-lg shadow-indigo-500/40 rounded-lg  hover:bg-gray-100 ">
+                            <img src="./src/assets/images/rb_images_success_story-2.png" class="w-full h-[180px] mb-4" alt="">
+                           
+                            <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
+                            <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
+                            <div class="flex justify-start mt-[32px]">
+                              <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
+                                <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                              </svg>
+                              </a>
+                            </div>
+                        </div>
+                       
+                      </div>
+                </div>
+            
+             
+          </div>
+          
+      </div>
+
+    </div>
+  </section>
+
+  <section class="raving-reviews  ">
+    <div class="container mx-auto p-4 sm:p-4 md:p-10 lg:-10 xl:p1-10 mt-10">
+          <div class="reviews">
+            <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
+                <div class="title flex justify-between items-center mb-10">
+                      <div class="title">
+                        <h2 for="" class="text-bs-black-primary font-semibold	text-5xl	">Read our Raving Reviews</h2>
+                      </div>
+                     <div class="flex justify-center items-center pt-4">
+                        <button type="button" class="flex rounded-xl hover:border-current		 border p-2 justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                            <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                                <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
+                        </button>
+                        <button type="button" class="flex rounded-xl hover:border-current		border p-2 justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                            <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                                <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative h-full	 overflow-hidden rounded-lg md:h-[32rem] mb-10">
+                    <div class="hidden duration-1000  ease-in-out" data-carousel-item>
+                      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 items-center">
+                        <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
+                            <h5 class="font-semibold text-xl	 text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
+                            <figcaption class="flex items-center justify-start space-x-3">
+                              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+                              <div class="space-y-0.5 font-medium dark:text-white text-left">
+                                  <div>Joseph McFall</div>
+                                  <div class="text-sm text-gray-500 dark:text-gray-400">Jun 1, 2022</div>
+                              </div>
+                          </figcaption>
+                          <hr class="my-5">
+                          <div class="flex items-center bg-white gap-6 p-4 rounded-xl	">
+                            <img class="w-11 h-11" src="./src/assets/logo/ic_start.svg" alt="">
+                            <a href="" class="text-bs-black-primary font-semibold	text-lg	underlined">On BlackHatWorld.com</a>
+                          </div>
+                        </div>
+                         <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
+                            <h5 class="font-semibold text-xl	 text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
+                            <figcaption class="flex items-center justify-start space-x-3">
+                              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+                              <div class="space-y-0.5 font-medium dark:text-white text-left">
+                                  <div>Joseph McFall</div>
+                                  <div class="text-sm text-gray-500 dark:text-gray-400">Jun 1, 2022</div>
+                              </div>
+                          </figcaption>
+                          <hr class="my-5">
+                          <div class="flex items-center bg-white gap-6 p-4 rounded-xl	">
+                            <img class="w-11 h-11" src="./src/assets/logo/ic_start.svg" alt="">
+                            <a href="" class="text-bs-black-primary font-semibold	text-lg	underlined">On BlackHatWorld.com</a>
+                          </div>
+                        </div>
+                         <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
+                            <h5 class="font-semibold text-xl	 text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
+                            <figcaption class="flex items-center justify-start space-x-3">
+                              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+                              <div class="space-y-0.5 font-medium dark:text-white text-left">
+                                  <div>Joseph McFall</div>
+                                  <div class="text-sm text-gray-500 dark:text-gray-400">Jun 1, 2022</div>
+                              </div>
+                          </figcaption>
+                          <hr class="my-5">
+                          <div class="flex items-center bg-white gap-6 p-4 rounded-xl	">
+                            <img class="w-11 h-11" src="./src/assets/logo/ic_start.svg" alt="">
+                            <a href="" class="text-bs-black-primary font-semibold	text-lg	underlined">On BlackHatWorld.com</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-1000 ease-in-out" data-carousel-item="active">
+                      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 items-center">
+                        <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
+                            <h5 class="font-semibold text-xl	 text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
+                            <figcaption class="flex items-center justify-start space-x-3">
+                              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+                              <div class="space-y-0.5 font-medium dark:text-white text-left">
+                                  <div>Joseph McFall</div>
+                                  <div class="text-sm text-gray-500 dark:text-gray-400">Jun 1, 2022</div>
+                              </div>
+                          </figcaption>
+                          <hr class="my-5">
+                          <div class="flex items-center bg-white gap-6 p-4 rounded-xl	">
+                            <img class="w-11 h-11" src="./src/assets/logo/ic_start.svg" alt="">
+                            <a href="" class="text-bs-black-primary font-semibold	text-lg	underlined">On BlackHatWorld.com</a>
+                          </div>
+                        </div>
+                         <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
+                            <h5 class="font-semibold text-xl	 text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
+                            <figcaption class="flex items-center justify-start space-x-3">
+                              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+                              <div class="space-y-0.5 font-medium dark:text-white text-left">
+                                  <div>Joseph McFall</div>
+                                  <div class="text-sm text-gray-500 dark:text-gray-400">Jun 1, 2022</div>
+                              </div>
+                          </figcaption>
+                          <hr class="my-5">
+                          <div class="flex items-center bg-white gap-6 p-4 rounded-xl	">
+                            <img class="w-11 h-11" src="./src/assets/logo/ic_start.svg" alt="">
+                            <a href="" class="text-bs-black-primary font-semibold	text-lg	underlined">On BlackHatWorld.com</a>
+                          </div>
+                        </div>
+                         <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
+                            <h5 class="font-semibold text-xl	 text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
+                            <figcaption class="flex items-center justify-start space-x-3">
+                              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+                              <div class="space-y-0.5 font-medium dark:text-white text-left">
+                                  <div>Joseph McFall</div>
+                                  <div class="text-sm text-gray-500 dark:text-gray-400">Jun 1, 2022</div>
+                              </div>
+                          </figcaption>
+                          <hr class="my-5">
+                          <div class="flex items-center bg-white gap-6 p-4 rounded-xl	">
+                            <img class="w-11 h-11" src="./src/assets/logo/ic_start.svg" alt="">
+                            <a href="" class="text-bs-black-primary font-semibold	text-lg	underlined">On BlackHatWorld.com</a>
+                          </div>
+                        </div>
+                      </div>                    
+                    </div>
+                  
+                </div>
+               
+            </div>
+          </div>
+        
+          <div class="ratings flex justify-between">
+              <div>
+                <label for="" class="text-3xl font-semibold		text-bs-black-primary">Ratings & Awards Won</label>
+              </div>
+              <div class="logos flex items-center gap-8">
+                <img src="./src/assets/logo/ic_trustpilot_colors.svg" alt="">
+                <img src="./src/assets/logo/ic_WMR.svg" alt="">
+                <img src="./src/assets/logo/ic_toprated.svg" alt="">
+                <img src="./src/assets/logo/ic_guarantee.svg" alt="">
+              </div>
+          </div>
+            <hr class="my-10">
+          <div class="get-in-touch rounded-2xl	 bg-bs-background-bg_2 text-center py-12 mb-[100px]">
+              <h2 class="mb-4 text-6xl text-bs-black-primary font-semibold	">Get In Touch</h2>
+              <p class="text-bs-black-primary font-normal	text-xl	">Odio aliquam arcu arcu dictumst justo eu placerat ornare purus. <br> Quam ultrices felis amet eu mauris. </p>
+              <button type="button" class=" mt-5 text-bs-white-primary bg-bs-black-primary border border-bs-black-primary focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-bold rounded-lg text-sm px-5 py-2.5  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Get in touch</button>
+          </div>  
+        </div>    
+  </section>
+  
+  <footer class="bg-bs-black-primary dark:bg-gray-900">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between ">
+            <div class="mb-6 md:mb-0">
+                <a href="https://flowbite.com/" class="flex items-center mb-2">
+                    <img src="./src/assets/logo/br_images_logo.png" class="h-8 mr-3" alt="Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white dark:text-white">Logo</span>
+                </a>
+                <label for="" class="text-white text-lg font-semibold	mt-5">Our Address:</label>
+                <p  class="text-lg text-bs-white-secondary font-normal	backdrop-opacity-60	mt-1">Oudebrugsteeg 9, 1012 JN <br> Amsterdam, Netherlands</p>
+                <div class="mt-5 social-media grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                  <div class="bg-bs-black-third flex justify-center p-4 rounded-lg	">
+                    <img src="./src/assets/icons/ic_twitter.svg" alt="logo twitter">
+                  </div>
+                  <div class="bg-bs-black-third flex justify-center p-4 rounded-lg	">
+                    <img src="./src/assets/icons/ic_linkedIn.svg" alt="logo linkedin">
+                  </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div>
+                    <h2 class="mb-2 text-sm font-semibold text-white uppercase dark:text-white">General</h2>
+                    <ul class="text-gray-600 dark:text-gray-400 font-medium">
+                        <li class="mb-1">
+                            <a href="#" class="hover:underline ">Our Service</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#" class="hover:underline">Order Now</a>
+                        </li>
+                          <li class="mb-1">
+                            <a href="#" class="hover:underline">Blog</a>
+                        </li>
+                          <li class="mb-1">
+                            <a href="#" class="hover:underline">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Contact Us</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-2 text-sm font-semibold text-white uppercase dark:text-white">Product</h2>
+                    <ul class="text-gray-600 dark:text-gray-400 font-medium">
+                        <li class="mb-1">
+                            <a href="#" class="hover:underline hover:text-bs-white-primary">Buy Etsy Favorites</a>
+                        </li>
+                        <li class="mb-1">
+                            <a href="#" class="hover:underline">Ranking Proof</a>
+                        </li>
+                          <li class="mb-1">
+                            <a href="#" class="hover:underline">Request a refund</a>
+                        </li>
+                          <li >
+                            <a href="#" class="hover:underline">Leave a Review</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <div class="mb-6">
+                      <h2 class="mb-2 text-sm font-semibold text-white uppercase dark:text-white">Legal</h2>
+                      <ul class="text-gray-600 dark:text-gray-400 font-medium">
+                          <li class="mb-1">
+                              <a href="#" class="hover:underline">Privacy Policy</a>
+                          </li>
+                          <li>
+                              <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                          </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h2 class="mb-2 text-sm font-semibold text-white uppercase dark:text-white">Language</h2>
+                      <ul class="text-gray-600 dark:text-gray-400 font-medium">
+                          <li class="mb-1">
+                              <a href="#" class="hover:underline">English</a>
+                          </li>
+                          <li>
+                              <a href="#" class="hover:underline">France</a>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sm:flex sm:items-center sm:justify-between mt-10">
+            <span class="text-base text-white sm:text-center dark:text-gray-400">© 2023 <a href="#" class="hover:underline">ProductName.com</a>. All Rights Reserved.
+            </span>
+            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+              <img src="./src/assets/logo/rb_images_payment.png" alt="">
+            </div>
+        </div>
+      </div>
+  </footer>
+  <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+
+  </body>
+</html>
