@@ -15,7 +15,7 @@
             <img src="./src/assets/logo/rb_logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
         </a>
         <div class="flex items-center md:order-2">
-            <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+            <button type="button" data-dropdown-toggle="language-dropdown-menu" class="invisible sm:visible  inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
               <svg class="w-5 h-5 mr-2 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900"><path fill="#b22234" d="M0 0h7410v3900H0z"/><path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"/><path fill="#3c3b6e" d="M0 0h2964v2100H0z"/><g fill="#fff"><g id="d"><g id="c"><g id="e"><g id="b"><path id="a" d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"/><use xlink:href="#a" y="420"/><use xlink:href="#a" y="840"/><use xlink:href="#a" y="1260"/></g><use xlink:href="#a" y="1680"/></g><use xlink:href="#b" x="247" y="210"/></g><use xlink:href="#c" x="494"/></g><use xlink:href="#d" x="988"/><use xlink:href="#c" x="1976"/><use xlink:href="#e" x="2470"/></g></svg>
               EN
               <svg class="ml-2 w-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -23,7 +23,7 @@
               </svg>
             </button>
             <div class="mr-2 w-0.5 h-5 bg-bs-line"></div>
-            <button type="button" class="text-bs-black-primary bg-white border border-bs-black-primary focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-bold rounded-lg text-sm px-5 py-2.5  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Buy Now</button>
+            <button type="button" class="invisible sm:visible text-bs-black-primary bg-white border border-bs-black-primary focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-bold rounded-lg text-sm px-5 py-2.5  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Buy Now</button>
             <!-- Dropdown -->
             <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700" id="language-dropdown-menu">
               <ul class="py-2 font-medium" role="none">
@@ -93,11 +93,11 @@
       </div>
     </nav>
 
-      <section class="container mx-auto p-4">
+  <section class="container mx-auto p-4">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 items-center">
       <div class="information col-span-2">
-        <h1 class="text-6xl font-bold ">
-          We will rank your Etsy <br>
+        <h1 class="text-[32px] sm:text-6xl leading-[34px] sm:leading-[64px] font-bold ">
+          We will rank your Etsy
           products within 30 days. <br> Guaranteed.
         </h1>
 
@@ -117,9 +117,9 @@
           </ul>
 
 
-          <div class="order flex items-center mt-6 gap-5">
-            <button type="button" class=" text-bs-white-primary hover:text-bs-black-primary bg-bs-black-primary border border-bs-black-primary focus:outline-none hover:bg-white focus:ring-4 focus:ring-gray-200 font-bold rounded-lg text-sm px-6 py-3  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Order Now</button>
-            <a href="" class="font-semibold text-bs-black-primary underline underline-offset-4">Or have a live chat with us >></a>
+          <div class="order items-center mt-6 grid grid-cols-1 sm:flex md:flex lg:flex xl:flex gap-4">
+            <button type="button" class="w-full sm:w-[146px] text-bs-white-primary hover:text-bs-black-primary bg-bs-black-primary border border-bs-black-primary focus:outline-none hover:bg-white focus:ring-4 focus:ring-gray-200 font-bold rounded-lg text-sm px-6 py-3  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Order Now</button>
+            <a href="" class="font-semibold text-center sm:text-left text-bs-black-primary underline underline-offset-4">Or have a live chat with us >></a>
           </div>
 
       </div>
@@ -208,7 +208,7 @@
                 <p class="font-normal text-bs-black-secondary text-lg leading-[26px] mt-4 ">If your product is not ranked in the Etsy top 10 in its niche within the agreed time frame, you get your money back. We are the only Etsy ranking service with a refund policy, but we are so sure of our service we doubt you'll ask for a refund.</p>
               </div>
                
-                <img class="mt-[40px] w-full h-[218px]" src="./src/assets/images/rb_image_money.png" alt="money">
+                <img class="mt-[40px] w-full h-[218px] sm:h-auto" src="./src/assets/images/rb_image_money.png" alt="money">
             </div> 
         
              <div class="max-w-md p-6 sm:relative bg-white h-full	 rounded-xl flex flex-col
@@ -217,8 +217,8 @@
                 <label for="" class="text-bs-black-primary font-semibold text-3xl">Total Privacy</label>
                 <p class="font-normal text-bs-black-secondary text-lg leading-[26px] mt-4">We don't require access to your Etsy account to rank your products. You, therefore, don't have to share your Etsy store passwords with us.</p>
               </div>
-              <div class="absolute inset-x-0 bottom-0 p-6">
-                <img class="mt-[40px] w-full h-[218px]" src="./src/assets/images/rb_image_shield.png" alt="money">
+              <div class="lg:absolute md:absolute inset-x-0 bottom-0 sm:p-0 lg:p-6 md:p-6">
+                <img class="mt-[40px] w-full h-[218px] sm:h-auto" src="./src/assets/images/rb_image_shield.png" alt="money">
               </div>
     
             </div> 
@@ -228,8 +228,8 @@
                <label for="" class="text-bs-black-primary font-semibold text-3xl">Total Privacy</label>
                <p class="font-normal text-bs-black-secondary text-lg leading-[26px] mt-4">We don't require access to your Etsy account to rank your products. You, therefore, don't have to share your Etsy store passwords with us.</p>
              </div>
-             <div class="absolute inset-x-0 bottom-0 p-6">
-               <img class="mt-[40px] w-full h-[218px]" src="./src/assets/images/rb_image_userlock.png" alt="money">
+             <div class="lg:absolute md:absolute inset-x-0 bottom-0 sm:p-0 lg:p-6 md:p-6">
+               <img class="mt-[40px] w-full h-[218px] sm:h-auto" src="./src/assets/images/rb_image_userlock.png" alt="money">
              </div>
    
            </div>  
