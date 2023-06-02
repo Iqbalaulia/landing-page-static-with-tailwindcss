@@ -8,6 +8,7 @@
       <link href="/style.css" rel="stylesheet">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
   </head>
   <body>
@@ -413,7 +414,7 @@
           <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ">
             <div class="col-span-2 sm:col-span-1 md:col-span-1 lg:col-span-2 xl:col-span-2">
               <h2 class="w-100 sm:w-100 md:w-100 lg:w-1/3 xl:w-1/3 text-bs-black-primary font-semibold text-[32px] leading-[38px] sm:text-5xl md:text-[32px] lg:text-5xl xl:text-5xl">Who Do We Work With?</h2>
-              <p for="" class=" mt-4 text-bs-black-secondary font-normal text-[16px] sm:text-lg md:text-lg lg:text-lg xl:text-lg	leading-6	">Odio aliquam arcu arcu dictumst justo eu placerat ornare purus. Quam ultrices felis amet eu mauris. </p>
+              <p for="" class=" mt-4 text-bs-black-secondary font-normal text-[16px] sm:text-lg md:text-lg lg:text-lg xl:text-lg w-full sm:w-[505px] md:w-[505px] lg:w-[505px] xl:w-[505px]	leading-6	">Odio aliquam arcu arcu dictumst justo eu placerat ornare purus. Quam ultrices felis amet eu mauris. </p>
             </div>
              <div class="w-full mt-[32px] sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0">
                <div class="bg-bs-background-bg_1 flex justify-start  rounded-xl mb-4 p-2 sm:p-4 md:p-4 lg:p-4 xl:p-4">
@@ -587,119 +588,95 @@
                               <span class="sr-only">Previous</span>
                           </span>
                           </button>          
-                          <button type="button" class="flex rounded-xl hover:border-current		border p-2 justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                          <button type="button" class=" flex rounded-xl hover:border-current		border p-2 justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
                               <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
                                 <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                 <span class="sr-only">Next</span>
                               </span>
                           </button>          
+                          
                         </div>
                       </div>
                 </div>
 
-                <div class="relative h-full	 overflow-hidden rounded-lg md:h-[32rem] mb-10">
-                    <div class="hidden duration-1000  ease-in-out" data-carousel-item>
-                      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 items-center">
-                        <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
-                            <h5 class="font-semibold text-sm sm:text-xl md:text-sm lg:text-xl xl:text-xl text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
-                            <figcaption class="flex items-center justify-start space-x-3">
-                              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
-                              <div class="space-y-0.5 font-medium dark:text-white text-left">
-                                  <div>Joseph McFall</div>
-                                  <div class="text-sm text-gray-500 dark:text-gray-400">Jun 1, 2022</div>
-                              </div>
-                          </figcaption>
-                          <hr class="my-5">
-                          <div class="flex items-center bg-white gap-6 p-4 rounded-xl	">
-                            <img class="w-5 sm:w-11 md:w-5 lg:w-11 xl:w-11 h-5 sm:h-11 md:h-5 lg:h-11 xl:h-11" src="./src/assets/logo/ic_start.svg" alt="">
-                            <a href="" class="text-bs-black-primary font-semibold	text-sm sm:text-lg md:text-sm lg:text-lg xl:text-lg	underlined">On BlackHatWorld.com</a>
+                <div class="swiper mySwiper md:h-[32rem] mb-10">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
+                        <h5 class="font-semibold text-sm sm:text-xl md:text-sm lg:text-xl xl:text-xl text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
+                        <figcaption class="flex items-center justify-start space-x-3">
+                          <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+                          <div class="space-y-0.5 font-medium dark:text-white text-left">
+                              <div>Joseph McFall</div>
+                              <div class="text-sm text-gray-500 dark:text-gray-400">Jun 1, 2022</div>
                           </div>
-                        </div>
-                         <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
-                            <h5 class="font-semibold text-sm sm:text-xl md:text-sm lg:text-xl xl:text-xl text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
-                            <figcaption class="flex items-center justify-start space-x-3">
-                              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
-                              <div class="space-y-0.5 font-medium dark:text-white text-left">
-                                  <div>Joseph McFall</div>
-                                  <div class="text-sm text-gray-500 dark:text-gray-400">Jun 1, 2022</div>
-                              </div>
-                          </figcaption>
-                          <hr class="my-5">
-                          <div class="flex items-center bg-white gap-6 p-4 rounded-xl	">
-                            <img class="w-5 sm:w-11 md:w-5 lg:w-11 xl:w-11 h-5 sm:h-11 md:h-5 lg:h-11 xl:h-11" src="./src/assets/logo/ic_start.svg" alt="">
-                            <a href="" class="text-bs-black-primary font-semibold	text-md sm:text-lg md:text-md lg:text-lg xl:text-lg	underlined">On BlackHatWorld.com</a>
-                          </div>
-                        </div>
-                         <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
-                            <h5 class="font-semibold text-sm sm:text-xl md:text-sm lg:text-xl xl:text-xltext-xl	 text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
-                            <figcaption class="flex items-center justify-start space-x-3">
-                              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
-                              <div class="space-y-0.5 font-medium dark:text-white text-left">
-                                  <div>Joseph McFall</div>
-                                  <div class="text-sm text-gray-500 dark:text-gray-400">Jun 1, 2022</div>
-                              </div>
-                          </figcaption>
-                          <hr class="my-5">
-                          <div class="flex items-center bg-white gap-6 p-4 rounded-xl	">
-                            <img class="w-5 sm:w-11 md:w-5 lg:w-11 xl:w-11 h-5 sm:h-11 md:h-5 lg:h-11 xl:h-11" src="./src/assets/logo/ic_start.svg" alt="">
-                            <a href="" class="text-bs-black-primary font-semibold	text-sm sm:text-lg md:text-sm lg:text-lg xl:text-lg	underlined">On BlackHatWorld.com</a>
-                          </div>
-                        </div>
+                      </figcaption>
+                      <hr class="my-5">
+                      <div class="flex items-center bg-white gap-6 p-4 rounded-xl	">
+                        <img class="w-5 sm:w-11 md:w-5 lg:w-11 xl:w-11 h-5 sm:h-11 md:h-5 lg:h-11 xl:h-11" src="./src/assets/logo/ic_start.svg" alt="">
+                        <a href="" class="text-bs-black-primary font-semibold	text-sm sm:text-lg md:text-sm lg:text-lg xl:text-lg	underlined">On BlackHatWorld.com</a>
                       </div>
                     </div>
-                    <div class="hidden duration-1000 ease-in-out" data-carousel-item="active">
-                      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 items-center">
-                        <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
-                            <h5 class="font-semibold text-sm sm:text-xl md:text-sm lg:text-xl xl:text-xl text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
-                            <figcaption class="flex items-center justify-start space-x-3">
-                              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
-                              <div class="space-y-0.5 font-medium dark:text-white text-left">
-                                  <div>Joseph McFall</div>
-                                  <div class="text-sm text-gray-500 dark:text-gray-400">Jun 1, 2022</div>
-                              </div>
-                          </figcaption>
-                          <hr class="my-5">
-                          <div class="flex items-center bg-white gap-6 p-4 rounded-xl	">
-                            <img class="w-5 sm:w-11 md:w-5 lg:w-11 xl:w-11 h-5 sm:h-11 md:h-5 lg:h-11 xl:h-11" src="./src/assets/logo/ic_start.svg" alt="">
-                            <a href="" class="text-bs-black-primary font-semibold	text-sm sm:text-lg md:text-sm lg:text-lg xl:text-lg	underlined">On BlackHatWorld.com</a>
-                          </div>
-                        </div>
-                         <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
-                            <h5 class="font-semibold text-sm sm:text-xl md:text-sm lg:text-xl xl:text-xl text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
-                            <figcaption class="flex items-center justify-start space-x-3">
-                              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
-                              <div class="space-y-0.5 font-medium dark:text-white text-left">
-                                  <div>Joseph McFall</div>
-                                  <div class="text-sm text-gray-500 dark:text-gray-400">Jun 1, 2022</div>
-                              </div>
-                          </figcaption>
-                          <hr class="my-5">
-                          <div class="flex items-center bg-white gap-6 p-4 rounded-xl	">
-                            <img class="w-5 sm:w-11 md:w-5 lg:w-11 xl:w-11 h-5 sm:h-11 md:h-5 lg:h-11 xl:h-11" src="./src/assets/logo/ic_start.svg" alt="">
-                            <a href="" class="text-bs-black-primary font-semibold	text-sm sm:text-lg md:text-sm lg:text-lg xl:text-lg underlined">On BlackHatWorld.com</a>
-                          </div>
-                        </div>
-                         <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
-                            <h5 class="font-semibold text-sm sm:text-xl md:text-sm lg:text-xl xl:text-xl	 text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
-                            <figcaption class="flex items-center justify-start space-x-3">
-                              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
-                              <div class="space-y-0.5 font-medium dark:text-white text-left">
-                                  <div>Joseph McFall</div>
-                                  <div class="text-sm text-gray-500 dark:text-gray-400">Jun 1, 2022</div>
-                              </div>
-                          </figcaption>
-                          <hr class="my-5">
-                          <div class="flex items-center bg-white gap-6 p-4 rounded-xl	">
-                            <img class="w-5 sm:w-11 md:w-5 lg:w-11 xl:w-11 h-5 sm:h-11 md:h-5 lg:h-11 xl:h-11" src="./src/assets/logo/ic_start.svg" alt="">
-                            <a href="" class="text-bs-black-primary font-semibold	text-sm sm:text-lg md:text-sm lg:text-lg xl:text-lg	underlined">On BlackHatWorld.com</a>
-                          </div>
-                        </div>
-                      </div>                    
                     </div>
+                    <div class="swiper-slide">
+                      <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
+                        <h5 class="font-semibold text-sm sm:text-xl md:text-sm lg:text-xl xl:text-xl text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
+                        <figcaption class="flex items-center justify-start space-x-3">
+                          <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+                          <div class="space-y-0.5 font-medium dark:text-white text-left">
+                              <div>Joseph McFall</div>
+                              <div class="text-sm text-gray-500 dark:text-gray-400">Jun 1, 2022</div>
+                          </div>
+                      </figcaption>
+                      <hr class="my-5">
+                      <div class="flex items-center bg-white gap-6 p-4 rounded-xl	">
+                        <img class="w-5 sm:w-11 md:w-5 lg:w-11 xl:w-11 h-5 sm:h-11 md:h-5 lg:h-11 xl:h-11" src="./src/assets/logo/ic_start.svg" alt="">
+                        <a href="" class="text-bs-black-primary font-semibold	text-sm sm:text-lg md:text-sm lg:text-lg xl:text-lg	underlined">On BlackHatWorld.com</a>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                       <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
+                            <h5 class="font-semibold text-sm sm:text-xl md:text-sm lg:text-xl xl:text-xl text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
+                            <figcaption class="flex items-center justify-start space-x-3">
+                              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+                              <div class="space-y-0.5 font-medium dark:text-white text-left">
+                                  <div>Joseph McFall</div>
+                                  <div class="text-sm text-gray-500 dark:text-gray-400">Jun 1, 2022</div>
+                              </div>
+                          </figcaption>
+                          <hr class="my-5">
+                          <div class="flex items-center bg-white gap-6 p-4 rounded-xl	">
+                            <img class="w-5 sm:w-11 md:w-5 lg:w-11 xl:w-11 h-5 sm:h-11 md:h-5 lg:h-11 xl:h-11" src="./src/assets/logo/ic_start.svg" alt="">
+                            <a href="" class="text-bs-black-primary font-semibold	text-sm sm:text-lg md:text-sm lg:text-lg xl:text-lg	underlined">On BlackHatWorld.com</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"> <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
+                      <h5 class="font-semibold text-sm sm:text-xl md:text-sm lg:text-xl xl:text-xl text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
+                      <figcaption class="flex items-center justify-start space-x-3">
+                        <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+                        <div class="space-y-0.5 font-medium dark:text-white text-left">
+                            <div>Joseph McFall</div>
+                            <div class="text-sm text-gray-500 dark:text-gray-400">Jun 1, 2022</div>
+                        </div>
+                    </figcaption>
+                    <hr class="my-5">
+                    <div class="flex items-center bg-white gap-6 p-4 rounded-xl	">
+                      <img class="w-5 sm:w-11 md:w-5 lg:w-11 xl:w-11 h-5 sm:h-11 md:h-5 lg:h-11 xl:h-11" src="./src/assets/logo/ic_start.svg" alt="">
+                      <a href="" class="text-bs-black-primary font-semibold	text-sm sm:text-lg md:text-sm lg:text-lg xl:text-lg	underlined">On BlackHatWorld.com</a>
+                    </div>
+                  </div>
+                </div>
+                  
+                  </div>
+                  <div class="swiper-pagination"></div>
                   
                 </div>
 
-                <div class="visible sm:hidden md:hidden lg:hidden xl:hidden flex justify-center items-center pt-4">
+             
+
+                <div class="visible sm:hidden md:hidden lg:hidden xl:hidden flex justify-center items-center pb-4">
                   <button type="button" class=" flex rounded-xl hover:border-current		 border p-2 justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
                               <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
                                   <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
@@ -832,6 +809,7 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/js/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <script>
     const accordionHeader = document.querySelectorAll(".accordion-header");
@@ -867,6 +845,46 @@
   });
 
   splide.mount();
+</script>
+
+<script>
+  var splide = new Splide('.data-splice', {
+    type: 'loop',
+    perPage: 4,
+    autoplay: false,
+    pagination:false,
+    arrows:false,
+    gap:'0.4em',
+    breakpoints: {
+		640: {
+			perPage: 1,
+		},
+  }
+  });
+
+  splide.mount();
+</script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    // navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    //   },
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+  });
 </script>
 </body>
 </html>
