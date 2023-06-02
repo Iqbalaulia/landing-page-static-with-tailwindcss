@@ -3,3 +3,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.swiper-button-prev{
+  position: relative !important; 
+}
+
+.swiper-button-next{
+  position: relative !important; 
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+  font-size: 0 !important;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  width: 40px !important;
+  height: 40px !important;
+  color: black;
+
+}
