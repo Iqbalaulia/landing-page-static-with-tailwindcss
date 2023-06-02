@@ -7,7 +7,8 @@
     <title>Landing page</title>
       <link href="/style.css" rel="stylesheet">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
-    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css">
+
   </head>
   <body>
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
@@ -95,7 +96,7 @@
     </nav>
 
   <section class="container mx-auto p-4">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 items-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 items-center">
       <div class="information col-span-2 sm:col-span-1 md:col-span-1 lg:col-span-2 xl:col-span-2">
         <h1 class="text-[32px] sm:text-6xl md:text-4xl lg:text-6xl xl:text-6xl leading-[34px] sm:leading-[64px] font-bold ">
           We will rank your Etsy
@@ -125,7 +126,7 @@
 
       </div>
       <!-- ... -->
-      <div class="images">
+      <div class="images mt-[44px] sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0">
         <img class="h-2/6	max-w-full w-full" alt="banner-images" src="./src/assets/images/rb_image_people-1.png">
       </div>
     </div>
@@ -159,7 +160,7 @@
 
   <section class="whats-its container mx-auto p-4 mt-[30px] sm:mt-[100px] lg:mt-[100px] md:mt-[100px] xl:mt-[100px]">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-12 items-center">
-      <div class="images">
+      <div class="hidden sm:block md:block lg:block xl:block" >
         <img class="h-2/6	max-w-full w-full" alt="banner-images" src="./src/assets/images/rb_image_people-2.png">
       </div>
       <div class="information">
@@ -177,9 +178,12 @@
           Etsy marketplace!
          </p>
       </div>
+      <div class="block sm:hidden md:hidden lg:hidden xl:hidden" >
+        <img class="h-2/6	max-w-full w-full" alt="banner-images" src="./src/assets/images/rb_image_people-2.png">
+      </div>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 items-center mt-[10px] sm:mt-[50px] md:mt-[50px] lg:mt-[50px] xl:mt-[50px] mb-[80px]">
-     <div class="bg-white pr-8 pb-0 sm:pb-8 md:pb-8 lg:pb-8 xl:pb-8 pt-8 text-center sm:text-left md:text-left lg:text-left xl:text-left">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 items-center mt-[10px] sm:mt-[50px] md:mt-[50px] lg:mt-[50px] xl:mt-[50px] mb-[56px] sm:mb-[160px] md:mb-[160px] lg:mb-[160px] xl:mb-[160px]">
+     <div class="bg-white pb-0 sm:pb-8 md:pb-8 lg:pb-8 xl:pb-8 pt-8 text-center sm:text-left md:text-left lg:text-left xl:text-left">
        <label for="" class="text-3xl font-semibold">What is Etsy Geeks All About?</label>
      </div>
      <div class="p-8 bg-bs-background-bg_1 rounded-xl text-center">
@@ -205,19 +209,19 @@
             <div class="max-w-md p-6 bg-white h-full rounded-xl flex flex-col justify-between">
               <div class="flex flex-col">
                 <label for="" class="text-bs-black-primary font-semibold text-[20px] sm:text-3xl md:text-2xl lg:text-3xl xl:text-3xl leading-[30px]">Money-Back Guarantee</label>
-                <p class="font-normal text-bs-black-secondary  leading-[16px] mt-4 text-[16px] sm:text-lg md:text-md lg:text-lg xl:text-lg">If your product is not ranked in the Etsy top 10 in its niche within the agreed time frame, you get your money back. We are the only Etsy ranking service with a refund policy, but we are so sure of our service we doubt you'll ask for a refund.</p>
+                <p class="font-normal text-bs-black-secondary  leading-[26px] mt-4 text-[16px] sm:text-lg md:text-md lg:text-lg xl:text-lg">If your product is not ranked in the Etsy top 10 in its niche within the agreed time frame, you get your money back. We are the only Etsy ranking service with a refund policy, but we are so sure of our service we doubt you'll ask for a refund.</p>
               </div>
-                <img class="mt-[40px] w-full h-[180px] sm:h-[218px] md:h-[150px] lg:h-[218px] xl:h-[218px]" src="./src/assets/images/rb_image_money.png" alt="money">
+                <img class="mt-[40px] w-full h-[160px] sm:h-[218px] md:h-[150px] lg:h-[218px] xl:h-[218px]" src="./src/assets/images/rb_image_money.png" alt="money">
             </div> 
         
              <div class="max-w-md p-6 sm:relative bg-white h-full	 rounded-xl flex flex-col
              ">
               <div class="flex flex-col">
                 <label for="" class="text-bs-black-primary font-semibold text-[20px] sm:text-3xl md:text-2xl lg:text-3xl xl:text-3xl">Total Privacy</label>
-                <p class="font-normal text-bs-black-secondary  leading-[16px] mt-4 text-[16px] sm:text-lg md:text-md lg:text-lg xl:text-lg">We don't require access to your Etsy account to rank your products. You, therefore, don't have to share your Etsy store passwords with us.</p>
+                <p class="font-normal text-bs-black-secondary  leading-[26px] mt-4 text-[16px] sm:text-lg md:text-md lg:text-lg xl:text-lg">We don't require access to your Etsy account to rank your products. You, therefore, don't have to share your Etsy store passwords with us.</p>
               </div>
               <div class="lg:absolute md:absolute inset-x-0 bottom-0 sm:p-0 lg:p-6 md:p-6">
-                <img class="mt-[40px] w-full h-[180px] sm:h-[218px] md:h-[150px] lg:h-[218px] xl:h-[218px]" src="./src/assets/images/rb_image_shield.png" alt="money">
+                <img class="mt-[40px] w-full h-[160px] sm:h-[218px] md:h-[150px] lg:h-[218px] xl:h-[218px]" src="./src/assets/images/rb_image_shield.png" alt="money">
               </div>
     
             </div> 
@@ -225,10 +229,10 @@
             ">
              <div class="flex flex-col">
                <label for="" class="text-bs-black-primary font-semibold text-[20px] sm:text-3xl md:text-2xl lg:text-3xl xl:text-3xl">Total Privacy</label>
-               <p class="font-normal text-bs-black-secondary leading-[16px] mt-4 text-[16px] sm:text-lg md:text-md lg:text-lg xl:text-lg">We don't require access to your Etsy account to rank your products. You, therefore, don't have to share your Etsy store passwords with us.</p>
+               <p class="font-normal text-bs-black-secondary leading-[26px] mt-4 text-[16px] sm:text-lg md:text-md lg:text-lg xl:text-lg">We don't require access to your Etsy account to rank your products. You, therefore, don't have to share your Etsy store passwords with us.</p>
              </div>
              <div class="lg:absolute md:absolute inset-x-0 bottom-0 sm:p-0 lg:p-6 md:p-6">
-               <img class="mt-[40px] w-full h-[180px] sm:h-[218px] md:h-[150px] lg:h-[218px] xl:h-[218px]" src="./src/assets/images/rb_image_userlock.png" alt="money">
+               <img class="mt-[40px] w-full h-[160px] sm:h-[218px] md:h-[150px] lg:h-[218px] xl:h-[218px]" src="./src/assets/images/rb_image_userlock.png" alt="money">
              </div>
    
            </div>  
@@ -240,8 +244,8 @@
     </div>
   </section>
 
-  <section class="get-service bg-bs-background-bg_1 pt-[120px] pb-5">
-    <div class="container mx-auto pb-[120px]">
+  <section class="get-service bg-bs-background-bg_1 pt-[54px] sm:pt-[120px] md:pt-[120px] lg:pt-[120px] xl:pt-[120px] pb-5">
+    <div class="container mx-auto p-4 pb-[120px]">
       <div class="flex justify-center">
         <h2 class="text-center text-bs-black-primary font-semibold text-[32px] sm:text-5xl md:text-3xl lg:text-5xl xl:text-5xl leading-[32px] sm:leading-[64px] md:leading-[34px] lg:leading-[64px] xl:leading-[64px] w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2">
           What You Will Get From Our Etsy 
@@ -362,13 +366,14 @@
     </div>
   </section>
 
-  <section class="teams bg-bs-white-primary pb-10">
+  <section class="teams bg-bs-white-primary pb-0 sm:pb-10 md:pb-10 lg:pb-10 xl:pb-10">
     <div class="container mx-auto p-4 mt-10">
       <h2 class="text-center text-bs-black-primary font-semibold text-[32px] sm:text-5xl md:text-3xl lg:text-5xl xl:text-5xl">Meet Our Meet</h2>
-      <p for="" class="text-center mt-4 text-bs-black-secondary font-normal text-[16px] sm:text-lg md:text-sm lg:text-lg xl:text-lg	leading-[24px] sm:leading-6 md:leading-6 lg:leading-6 xl:leading-6	">Contact us and let us help you with your queries. We're Etsy Experts and available from <br/> Monday to Friday via E-mail, live chat and phone.</p>
-
+      <div class="flex justify-center text-center">
+        <p for="" class="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mt-4 text-bs-black-secondary font-normal text-[16px] sm:text-lg md:text-sm lg:text-lg xl:text-lg	leading-[24px] sm:leading-6 md:leading-6 lg:leading-6 xl:leading-6	">Contact us and let us help you with your queries. We're Etsy Experts and available from Monday to Friday via E-mail, live chat and phone.</p>
+      </div>
       <div class="content">
-          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4 mt-10 items-center">
+          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4 mt-[24px] sm:mt-10 md:mt-10 lg:mt-10 xl:mt-10 items-center">
             <div class="max-w-sm p-6 hover:bg-white h-full	rounded-xl">
                <div class="bg-bs-background-bg_1 flex justify-center rounded-2xl p-10 mb-4">
                   <img class="" src="./src/assets/images/rb_images_avatar.png" alt="money">
@@ -403,27 +408,27 @@
   </section>
 
   <section class="we-work bg-bs-white-primary pb-10">
-    <div class="container mx-auto p-4 sm:p-4 md:p-4 lg:-10 xl:p1-10 mt-10">
+    <div class="container mx-auto p-4 sm:p-4 md:p-4 lg:-10 xl:p1-10 mt-0 sm:mt-10 md:mt-10 lg:mt-10 xl:mt-10">
       <div class="content">
-          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10">
+          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ">
             <div class="col-span-2 sm:col-span-1 md:col-span-1 lg:col-span-2 xl:col-span-2">
               <h2 class="w-100 sm:w-100 md:w-100 lg:w-1/3 xl:w-1/3 text-bs-black-primary font-semibold text-[32px] leading-[38px] sm:text-5xl md:text-[32px] lg:text-5xl xl:text-5xl">Who Do We Work With?</h2>
-              <p for="" class=" mt-4 text-bs-black-secondary font-normal text-[16px] sm:text-lg md:text-lg lg:text-lg xl:text-lg	leading-6	">Odio aliquam arcu arcu dictumst justo eu placerat ornare <br/> purus. Quam ultrices felis amet eu mauris. </p>
+              <p for="" class=" mt-4 text-bs-black-secondary font-normal text-[16px] sm:text-lg md:text-lg lg:text-lg xl:text-lg	leading-6	">Odio aliquam arcu arcu dictumst justo eu placerat ornare purus. Quam ultrices felis amet eu mauris. </p>
             </div>
-             <div class="w-full">
-               <div class="bg-bs-background-bg_1 flex justify-start  rounded-xl mb-4 p-4">
-                  <div class="flex items-center gap-4">
+             <div class="w-full mt-[32px] sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0">
+               <div class="bg-bs-background-bg_1 flex justify-start  rounded-xl mb-4 p-2 sm:p-4 md:p-4 lg:p-4 xl:p-4">
+                  <div class="flex items-center gap-5">
                     <img class="" src="./src/assets/icons/ic_fast.svg" alt="money">
                     <label for=""  class="font-semibold text-bs-black-primary text-[18px] sm:text-3xl md:text-3xl xl:text-3xl lg:text-3xl">Fast Etsy Ranking</label>
                   </div>
                </div>
-              <div class="bg-bs-background-bg_1 flex justify-start rounded-xl mb-4 p-4">
+              <div class="bg-bs-background-bg_1 flex justify-start rounded-xl mb-4 p-2 sm:p-4 md:p-4 lg:p-4 xl:p-4">
                   <div class="flex items-center gap-4">
                     <img class="" src="./src/assets/icons/ic_artist.svg" alt="money">
                     <label for=""  class="font-semibold text-bs-black-primary text-[18px] sm:text-3xl md:text-3xl xl:text-3xl lg:text-3xl">Artists</label>
                   </div>
                </div>
-                <div class="bg-bs-background-bg_1 flex justify-start rounded-xl mb-4 p-4">
+                <div class="bg-bs-background-bg_1 flex justify-start rounded-xl mb-4 p-2 sm:p-4 md:p-4 lg:p-4 xl:p-4">
                   <div class="flex items-center gap-4">
                     <img class="" src="./src/assets/icons/ic_pen-tool.svg" alt="money">
                     <label for="" class="font-semibold text-bs-black-primary text-[18px] sm:text-3xl md:text-3xl xl:text-3xl lg:text-3xl	">Designers</label>
@@ -437,14 +442,118 @@
   </section>
 
   <section class="success-story bg-bs-background-bg_1 pb-10 pt-10">
-    <div class="container mx-auto p-4 sm:p-4 md:p-10 lg:-10 xl:p1-10 mt-10">
+    <div class="container mx-auto p-4 sm:p-4 md:p-10 lg:-10 xl:p1-10">
       <div id="success-story" class="relative w-full" data-carousel="slide">
-        <div class="header-title flex justify-between items-center mb-10">
-            <div class="title">
-                <h2 for="" class="text-bs-black-primary font-semibold	text-xl sm:text-5xl md:text-xl lg:text-5xl xl:text-5xl	">Etsy Geeks Case Studies and <br> Success Stories</h2>
+        <div class="header-title grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 items-center mb-0 sm:mb-10 md:mb-10 lg:mb-10 xl:mb-10">
+          <div class="title w-100 col-span-2 text-center sm:text-left md:text-left lg:text-left xl:text-left">
+                <h2 for="" class="text-bs-black-primary font-semibold	text-[32px] sm:text-5xl md:text-xl lg:text-5xl xl:text-5xl leading-[38px]">Etsy Geeks Case Studies and Success Stories</h2>
             </div>
-            <div class="flex justify-center items-center pt-4">
-                  <button type="button" class="flex rounded-xl hover:border-current		 border p-2 justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+            <div class="hidden sm:block md:block lg:block xl:block">
+              <div class="flex justify-end items-center">
+                <button type="button" class=" flex rounded-xl hover:border-current		 border p-2 justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                  <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+                </button>          
+                <button type="button" class="flex rounded-xl hover:border-current		border p-2 justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                      <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      <span class="sr-only">Next</span>
+                    </span>
+                </button>          
+              </div>
+            </div>
+        </div>
+        
+    
+
+        <div class="mx-auto">
+          <div class="splide">
+            <div class="splide__arrows">
+              <button class="bg-gray-900 shadow splide__arrow splide__arrow--prev">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6 text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                </svg>
+              </button>
+              <button class="bg-gray-900 shadow splide__arrow splide__arrow--next">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6 text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                </svg>
+              </button>
+            </div>
+           
+            <div class="splide__track">
+              <div class="splide__list gap-x-4">
+                <div class="w-full splide__slide lg:max-w-lg py-4">
+                  <div class="block max-w-sm p-5 shadow-lg shadow-black-500/50 rounded-lg   bg-white  shadow-black-500/50   hover:bg-gray-100 ">
+                    <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[150px] sm:h-[170px]  md:h-[170px]  lg:h-[170px]  xl:h-[170px]  mb-4" alt="">
+                  
+                    <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
+                    <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
+                    <div class="flex justify-start mt-[32px]">
+                      <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
+                        <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                      </svg>
+                      </a>
+                    </div>
+                </div>
+                </div>
+                <div class="w-full splide__slide lg:max-w-lg py-4">
+                  <div class="block max-w-sm p-5 shadow-lg shadow-black-500/50 rounded-lg   bg-white  shadow-black-500/50   hover:bg-gray-100 ">
+                    <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[150px] sm:h-[170px]  md:h-[170px]  lg:h-[170px]  xl:h-[170px]  mb-4" alt="">
+                  
+                    <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
+                    <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
+                    <div class="flex justify-start mt-[32px]">
+                      <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
+                        <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                      </svg>
+                      </a>
+                    </div>
+                </div>
+                </div>
+                <div class="w-full splide__slide lg:max-w-lg py-4">
+                  <div class="block max-w-sm p-5 shadow-lg shadow-black-500/50 rounded-lg   bg-white  shadow-black-500/50   hover:bg-gray-100 ">
+                    <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[150px] sm:h-[170px]  md:h-[170px]  lg:h-[170px]  xl:h-[170px]  mb-4" alt="">
+                  
+                    <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
+                    <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
+                    <div class="flex justify-start mt-[32px]">
+                      <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
+                        <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                      </svg>
+                      </a>
+                    </div>
+                </div>
+                </div>
+                <div class="w-full splide__slide lg:max-w-lg py-4">
+                  <div class="block max-w-sm p-5 shadow-lg shadow-black-500/50 rounded-lg   bg-white  shadow-black-500/50   hover:bg-gray-100 ">
+                    <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[150px] sm:h-[170px]  md:h-[170px]  lg:h-[170px]  xl:h-[170px]  mb-4" alt="">
+                  
+                    <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
+                    <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
+                    <div class="flex justify-start mt-[32px]">
+                      <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
+                        <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                      </svg>
+                      </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="visible sm:hidden md:hidden lg:hidden xl:hidden flex justify-center items-center pt-4">
+                  <button type="button" class=" flex rounded-xl hover:border-current		 border p-2 justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
                               <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
                                   <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
                                   <span class="sr-only">Previous</span>
@@ -456,100 +565,6 @@
                                   <span class="sr-only">Next</span>
                               </span>
                 </button>          
-            </div>
-        </div>
-
-        <div class="relative h-full overflow-hidden rounded-lg md:h-[32rem]">
-              <!-- Item 1 -->
-               <div class="hidden duration-1000  ease-in-out" data-carousel-item>
-                      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 items-center">
-                        <div class="block max-w-sm p-8 bg-white shadow-lg shadow-indigo-500/40 rounded-lg  hover:bg-gray-100 ">
-                            <img src="./src/assets/images/rb_images_success_story-1.png" class="w-full h-[180px] mb-4" alt="">
-                           
-                            <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
-                            <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
-                            <div class="flex justify-start mt-[32px]">
-                              <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
-                                <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                              </svg>
-                              </a>
-                            </div>
-                        </div>
-                         <div class="block max-w-sm p-8 bg-white shadow-lg shadow-indigo-500/40 rounded-lg  hover:bg-gray-100 ">
-                            <img src="./src/assets/images/rb_images_success_story-2.png" class="w-full h-[180px] mb-4" alt="">
-                           
-                            <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
-                            <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
-                            <div class="flex justify-start mt-[32px]">
-                              <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
-                                <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                              </svg>
-                              </a>
-                            </div>
-                        </div>
-                         <div class="block max-w-sm p-8 bg-white shadow-lg shadow-indigo-500/40 rounded-lg  hover:bg-gray-100 ">
-                            <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[180px] mb-4" alt="">
-                           
-                            <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
-                            <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
-                            <div class="flex justify-start mt-[32px]">
-                              <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
-                                <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                              </svg>
-                              </a>
-                            </div>
-                        </div> 
-                      </div>
-                </div>
-              <div class="hidden duration-1000  ease-in-out" data-carousel-item>
-                      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 items-center">
-                        <div class="block max-w-sm p-8 bg-white shadow-lg shadow-indigo-500/40 rounded-lg  hover:bg-gray-100 ">
-                            <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[180px] mb-4" alt="">
-                           
-                            <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
-                            <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
-                            <div class="flex justify-start mt-[32px]">
-                              <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
-                                <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                              </svg>
-                              </a>
-                            </div>
-                        </div>
-                         <div class="block max-w-sm p-8 bg-white shadow-lg shadow-indigo-500/40 rounded-lg  hover:bg-gray-100 ">
-                            <img src="./src/assets/images/rb_images_success_story-1.png" class="w-full h-[180px] mb-4" alt="">
-                           
-                            <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
-                            <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
-                            <div class="flex justify-start mt-[32px]">
-                              <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
-                                <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                              </svg>
-                              </a>
-                            </div>
-                        </div>
-                         <div class="block max-w-sm p-8 bg-white shadow-lg shadow-indigo-500/40 rounded-lg  hover:bg-gray-100 ">
-                            <img src="./src/assets/images/rb_images_success_story-2.png" class="w-full h-[180px] mb-4" alt="">
-                           
-                            <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
-                            <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
-                            <div class="flex justify-start mt-[32px]">
-                              <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
-                                <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                              </svg>
-                              </a>
-                            </div>
-                        </div>
-                       
-                      </div>
-                </div>
-            
-             
         </div>
       </div>
 
@@ -564,21 +579,24 @@
                       <div class="title">
                         <h2 for="" class="text-bs-black-primary font-semibold	text-[32px] sm:text-5xl md:text-[28px] lg:text-5xl xl:text-5xl	leading-[38px] sm:leading-[64px] md:leading-[38px] lg:leading-[64px] xl:leading-[64px] ">Read our Raving Reviews</h2>
                       </div>
-                     <div class="flex justify-center items-center pt-4">
-                        <button type="button" class="flex rounded-xl hover:border-current		 border p-2 justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                      <div class="hidden sm:block md:block lg:block xl:block">
+                        <div class="flex justify-end items-center">
+                          <button type="button" class=" flex rounded-xl hover:border-current		 border p-2 justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
                             <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
-                                <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Previous</span>
-                            </span>
-                        </button>
-                        <button type="button" class="flex rounded-xl hover:border-current		border p-2 justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
-                            <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                              <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+                              <span class="sr-only">Previous</span>
+                          </span>
+                          </button>          
+                          <button type="button" class="flex rounded-xl hover:border-current		border p-2 justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                              <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
                                 <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                 <span class="sr-only">Next</span>
-                            </span>
-                        </button>
-                    </div>
+                              </span>
+                          </button>          
+                        </div>
+                      </div>
                 </div>
+
                 <div class="relative h-full	 overflow-hidden rounded-lg md:h-[32rem] mb-10">
                     <div class="hidden duration-1000  ease-in-out" data-carousel-item>
                       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 items-center">
@@ -629,7 +647,6 @@
                         </div>
                       </div>
                     </div>
-                    <!-- Item 2 -->
                     <div class="hidden duration-1000 ease-in-out" data-carousel-item="active">
                       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 items-center">
                         <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
@@ -681,18 +698,33 @@
                     </div>
                   
                 </div>
+
+                <div class="visible sm:hidden md:hidden lg:hidden xl:hidden flex justify-center items-center pt-4">
+                  <button type="button" class=" flex rounded-xl hover:border-current		 border p-2 justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                              <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                                  <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+                                  <span class="sr-only">Previous</span>
+                              </span>
+                          </button>
+                <button type="button" class="flex rounded-xl hover:border-current		border p-2 justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                              <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                                  <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                  <span class="sr-only">Next</span>
+                              </span>
+                </button>          
+                </div>
             </div>
           </div>
         
-          <div class="ratings  justify-between grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10">
+          <div class="ratings justify-between grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
               <div class="text-center sm:text-left md:text-left lg:text-left xl:text-left ">
-                <label for="" class="text-[24px] sm:text-3xl md:text-1xl lg:text-3xl xl:text-3xl font-semibold text-bs-black-primary">Ratings & Awards Won</label>
+                <label for="" class="text-[23px] sm:text-3xl md:text-1xl lg:text-3xl xl:text-3xl font-semibold text-bs-black-primary">Ratings & Awards Won</label>
               </div>
-              <div class="logos flex items-center gap-1 sm:gap-8 md:gap-4 lg:gap-8 xl:gap-8">
-                <img src="./src/assets/logo/ic_trustpilot_colors.svg" class="w-[76px] sm:w-[115px] md:w-[60px] lg:w-[115px] xl:w-[115px] h-[36px] sm:h-[60px] md:h-[50px] lg:h-[60px] xl:h-[60px]" alt="">
-                <img src="./src/assets/logo/ic_WMR.svg" alt="" class="w-[76px] sm:w-[115px] md:w-[60px] lg:w-[115px] xl:w-[115px] h-[36px] sm:h-[60px] md:h-[50px] lg:h-[60px] xl:h-[60px]" >
-                <img src="./src/assets/logo/ic_toprated.svg" alt="" class="w-[76px] sm:w-[115px] md:w-[60px] lg:w-[115px] xl:w-[115px] h-[36px] sm:h-[60px] md:h-[50px] lg:h-[60px] xl:h-[60px]" >
-                <img src="./src/assets/logo/ic_guarantee.svg" alt="" class="w-[76px] sm:w-[115px] md:w-[60px] lg:w-[115px] xl:w-[115px] h-[36px] sm:h-[60px] md:h-[50px] lg:h-[60px] xl:h-[60px]" >
+              <div class="logos flex items-center gap-1 sm:gap-8 md:gap-4 lg:gap-4 xl:gap-4 justify-center sm:justify-end md:justify-end lg:justify-end xl:justify-end mt-[12px] sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0">
+                <img src="./src/assets/logo/ic_trustpilot_colors.svg" class="w-[67px] sm:w-[115px] md:w-[60px] lg:w-[115px] xl:w-[115px] h-[36px] sm:h-[60px] md:h-[50px] lg:h-[60px] xl:h-[60px]" alt="">
+                <img src="./src/assets/logo/ic_WMR.svg" alt="" class="w-[67px] sm:w-[115px] md:w-[60px] lg:w-[115px] xl:w-[115px] h-[36px] sm:h-[60px] md:h-[50px] lg:h-[60px] xl:h-[60px]" >
+                <img src="./src/assets/logo/ic_toprated.svg" alt="" class="w-[67px] sm:w-[115px] md:w-[60px] lg:w-[115px] xl:w-[115px] h-[36px] sm:h-[60px] md:h-[50px] lg:h-[60px] xl:h-[60px]" >
+                <img src="./src/assets/logo/ic_guarantee.svg" alt="" class="w-[67px] sm:w-[115px] md:w-[60px] lg:w-[115px] xl:w-[115px] h-[36px] sm:h-[60px] md:h-[50px] lg:h-[60px] xl:h-[60px]" >
               </div>
           </div>
           <hr class="my-10">
@@ -799,7 +831,8 @@
       </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-  
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/js/splide.min.js"></script>
+
   <script>
     const accordionHeader = document.querySelectorAll(".accordion-header");
     accordionHeader.forEach((header) => {
@@ -817,6 +850,23 @@
         }
     });
     });
+</script>
+<script>
+  var splide = new Splide('.splide', {
+    type: 'loop',
+    perPage: 4,
+    autoplay: false,
+    pagination:false,
+    arrows:false,
+    gap:'0.4em',
+    breakpoints: {
+		640: {
+			perPage: 1,
+		},
+  }
+  });
+
+  splide.mount();
 </script>
 </body>
 </html>
