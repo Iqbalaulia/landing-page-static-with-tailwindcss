@@ -436,21 +436,21 @@
   </section>
 
   <section class="success-story bg-bs-background-bg_1 pb-10 pt-10">
-    <div class="container mx-auto p-4 sm:p-4 md:p-10 lg:-10 xl:p1-10">
+    <div class="container mx-auto p-4 pb-0">
       <div id="success-story" class="relative w-full" data-carousel="slide">
-        <div class="header-title grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 items-center mb-0 sm:mb-10 md:mb-10 lg:mb-10 xl:mb-10">
+        <div class="header-title grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 items-center mb-0 sm:mb-[64px] md:mb-[64px] lg:mb-[64px] xl:mb-[64px]">
           <div class="title w-100 col-span-2 text-center sm:text-left md:text-left lg:text-left xl:text-left">
                 <h2 for="" class="text-bs-black-primary font-semibold	text-[32px] sm:text-5xl md:text-xl lg:text-5xl xl:text-5xl leading-[38px]">Etsy Geeks Case Studies and Success Stories</h2>
             </div>
             <div class="hidden sm:block md:block lg:block xl:block">
-              <div class="flex justify-end items-center">
-                <button type="button" class=" flex rounded-xl hover:border-current		 border p-2 justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+              <div class="flex justify-end items-center gap-4">
+                <button type="button" class="swiper-button-prev flex rounded-xl hover:border-current border p-2 justify-center items-center mr-4 h-full hover:border-bs-black-primary cursor-pointer group focus:outline-none" data-carousel-prev>
                   <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
                     <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
                     <span class="sr-only">Previous</span>
                 </span>
                 </button>          
-                <button type="button" class="flex rounded-xl hover:border-current		border p-2 justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                <button type="button" class="swiper-button-next flex rounded-xl hover:border-current	 hover:border-bs-black-primary	border p-2 justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
                     <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
                       <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                       <span class="sr-only">Next</span>
@@ -460,105 +460,122 @@
             </div>
         </div>
         
-    
-
-        <div class="mx-auto">
-          <div class="splide">
-            <div class="splide__arrows">
-              <button class="bg-gray-900 shadow splide__arrow splide__arrow--prev">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="w-6 h-6 text-white">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                </svg>
-              </button>
-              <button class="bg-gray-900 shadow splide__arrow splide__arrow--next">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="w-6 h-6 text-white">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                </svg>
-              </button>
+        
+        <div class="swiper swipperSuccessStory md:h-[24rem]">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swipper-success-story">
+              <div class="rounded-[16px] block max-w-sm p-5 shadow-lg shadow-black-500/50 bg-white  shadow-black-500/50   hover:bg-gray-100 ">
+                <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[150px] sm:h-[150px]  md:h-[150px]  lg:h-[150px]  xl:h-[150px]  mb-[16px]" alt="">
+              
+                <label for="" class="mt-4 text-bs-black-secondary text-[16px]	font-medium	">Jun 1, 2022</label>
+                <p class="text-bs-black-primary font-semibold text-[18px]	leading-[22px] h-[84px] mt-[8px]">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
+                <div class="flex justify-start mt-[6px]">
+                  <a href="" class="flex items-center gap-3 text-[16px]	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary leading-[24px]"> Read More 
+                    <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                  </svg>
+                  </a>
+                </div>
             </div>
-           
-            <div class="splide__track">
-              <div class="splide__list gap-x-4">
-                <div class="w-full splide__slide lg:max-w-lg py-4">
-                  <div class="block max-w-sm p-5 shadow-lg shadow-black-500/50 rounded-lg   bg-white  shadow-black-500/50   hover:bg-gray-100 ">
-                    <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[150px] sm:h-[170px]  md:h-[170px]  lg:h-[170px]  xl:h-[170px]  mb-4" alt="">
-                  
-                    <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
-                    <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
-                    <div class="flex justify-start mt-[32px]">
-                      <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
-                        <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                      </svg>
-                      </a>
-                    </div>
-                </div>
-                </div>
-                <div class="w-full splide__slide lg:max-w-lg py-4">
-                  <div class="block max-w-sm p-5 shadow-lg shadow-black-500/50 rounded-lg   bg-white  shadow-black-500/50   hover:bg-gray-100 ">
-                    <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[150px] sm:h-[170px]  md:h-[170px]  lg:h-[170px]  xl:h-[170px]  mb-4" alt="">
-                  
-                    <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
-                    <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
-                    <div class="flex justify-start mt-[32px]">
-                      <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
-                        <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                      </svg>
-                      </a>
-                    </div>
-                </div>
-                </div>
-                <div class="w-full splide__slide lg:max-w-lg py-4">
-                  <div class="block max-w-sm p-5 shadow-lg shadow-black-500/50 rounded-lg   bg-white  shadow-black-500/50   hover:bg-gray-100 ">
-                    <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[150px] sm:h-[170px]  md:h-[170px]  lg:h-[170px]  xl:h-[170px]  mb-4" alt="">
-                  
-                    <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
-                    <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
-                    <div class="flex justify-start mt-[32px]">
-                      <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
-                        <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                      </svg>
-                      </a>
-                    </div>
-                </div>
-                </div>
-                <div class="w-full splide__slide lg:max-w-lg py-4">
-                  <div class="block max-w-sm p-5 shadow-lg shadow-black-500/50 rounded-lg   bg-white  shadow-black-500/50   hover:bg-gray-100 ">
-                    <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[150px] sm:h-[170px]  md:h-[170px]  lg:h-[170px]  xl:h-[170px]  mb-4" alt="">
-                  
-                    <label for="" class="mt-4 mb-4 text-bs-black-secondary text-lg	font-medium	">Jun 1, 2022</label>
-                    <p class="text-bs-black-primary font-semibold text-xl		">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
-                    <div class="flex justify-start mt-[32px]">
-                      <a href="" class="flex items-center gap-4 text-base	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary"> Read More 
-                        <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-                      </svg>
-                      </a>
-                    </div>
-                </div>
-                </div>
-              </div>
             </div>
+            <div class="swiper-slide">
+              <div class="rounded-[16px] block max-w-sm p-5 shadow-lg shadow-black-500/50 bg-white  shadow-black-500/50   hover:bg-gray-100 ">
+                <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[150px] sm:h-[150px]  md:h-[150px]  lg:h-[150px]  xl:h-[150px]  mb-[16px]" alt="">
+              
+                <label for="" class="mt-4 text-bs-black-secondary text-[16px]	font-medium	">Jun 1, 2022</label>
+                <p class="text-bs-black-primary font-semibold text-[18px]	leading-[22px] h-[84px] mt-[8px]">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
+                <div class="flex justify-start mt-[6px]">
+                  <a href="" class="flex items-center gap-3 text-[16px]	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary leading-[24px]"> Read More 
+                    <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                  </svg>
+                  </a>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-[16px] block max-w-sm p-5 shadow-lg shadow-black-500/50 bg-white  shadow-black-500/50   hover:bg-gray-100 ">
+                <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[150px] sm:h-[150px]  md:h-[150px]  lg:h-[150px]  xl:h-[150px]  mb-[16px]" alt="">
+              
+                <label for="" class="mt-4 text-bs-black-secondary text-[16px]	font-medium	">Jun 1, 2022</label>
+                <p class="text-bs-black-primary font-semibold text-[18px]	leading-[22px] h-[84px] mt-[8px]">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
+                <div class="flex justify-start mt-[6px]">
+                  <a href="" class="flex items-center gap-3 text-[16px]	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary leading-[24px]"> Read More 
+                    <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                  </svg>
+                  </a>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-[16px] block max-w-sm p-5 shadow-lg shadow-black-500/50 bg-white  shadow-black-500/50   hover:bg-gray-100 ">
+                <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[150px] sm:h-[150px]  md:h-[150px]  lg:h-[150px]  xl:h-[150px]  mb-[16px]" alt="">
+              
+                <label for="" class="mt-4 text-bs-black-secondary text-[16px]	font-medium	">Jun 1, 2022</label>
+                <p class="text-bs-black-primary font-semibold text-[18px]	leading-[22px] h-[84px] mt-[8px]">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
+                <div class="flex justify-start mt-[6px]">
+                  <a href="" class="flex items-center gap-3 text-[16px]	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary leading-[24px]"> Read More 
+                    <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                  </svg>
+                  </a>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-[16px] block max-w-sm p-5 shadow-lg shadow-black-500/50 bg-white  shadow-black-500/50   hover:bg-gray-100 ">
+                <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[150px] sm:h-[150px]  md:h-[150px]  lg:h-[150px]  xl:h-[150px]  mb-[16px]" alt="">
+              
+                <label for="" class="mt-4 text-bs-black-secondary text-[16px]	font-medium	">Jun 1, 2022</label>
+                <p class="text-bs-black-primary font-semibold text-[18px]	leading-[22px] h-[84px] mt-[8px]">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
+                <div class="flex justify-start mt-[6px]">
+                  <a href="" class="flex items-center gap-3 text-[16px]	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary leading-[24px]"> Read More 
+                    <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                  </svg>
+                  </a>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-[16px] block max-w-sm p-5 shadow-lg shadow-black-500/50 bg-white  shadow-black-500/50   hover:bg-gray-100 ">
+                <img src="./src/assets/images/rb_images_success_story-4.png" class="w-full h-[150px] sm:h-[150px]  md:h-[150px]  lg:h-[150px]  xl:h-[150px]  mb-[16px]" alt="">
+              
+                <label for="" class="mt-4 text-bs-black-secondary text-[16px]	font-medium	">Jun 1, 2022</label>
+                <p class="text-bs-black-primary font-semibold text-[18px]	leading-[22px] h-[84px] mt-[8px]">Compared to Etsy Ads, Etsy Geeks Services has a way better ROI!</p>
+                <div class="flex justify-start mt-[6px]">
+                  <a href="" class="flex items-center gap-3 text-[16px]	font-semibold	hover:text-bs-red-primary focus:text-bs-red-primary leading-[24px]"> Read More 
+                    <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                  </svg>
+                  </a>
+                </div>
+            </div>
+            </div>
+          
           </div>
+          <div class="swiper-pagination"></div>
+          
         </div>
 
-        <div class="visible sm:hidden md:hidden lg:hidden xl:hidden flex justify-center items-center pt-4">
-                  <button type="button" class=" flex rounded-xl hover:border-current		 border p-2 justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-                              <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
-                                  <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
-                                  <span class="sr-only">Previous</span>
-                              </span>
-                          </button>
-                <button type="button" class="flex rounded-xl hover:border-current		border p-2 justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
-                              <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
-                                  <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                  <span class="sr-only">Next</span>
-                              </span>
-                </button>          
+      
+        <div class="visible sm:hidden md:hidden lg:hidden xl:hidden flex justify-center items-center pb-4">
+          <div class="flex justify-end items-center gap-4">
+            <button type="button" class=" hover:border-bs-black-primary swiper-button-prev flex rounded-xl hover:border-current		 border p-2 justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+              <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Previous</span>
+            </span>
+            </button>          
+            <button type="button" class=" hover:border-bs-black-primary swiper-button-next flex rounded-xl hover:border-current		border p-2 justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                  <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  <span class="sr-only">Next</span>
+                </span>
+            </button>          
+            
+          </div>           
         </div>
       </div>
 
@@ -575,13 +592,13 @@
                       </div>
                       <div class="hidden sm:block md:block lg:block xl:block">
                         <div class="flex justify-end items-center gap-4">
-                          <button type="button" class="swiper-button-prev flex rounded-xl hover:border-current		 border p-2 justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                          <button type="button" class=" hover:border-bs-black-primary swiper-button-prev flex rounded-xl hover:border-current border p-2 justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
                             <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
                               <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
                               <span class="sr-only">Previous</span>
                           </span>
                           </button>          
-                          <button type="button" class="swiper-button-next flex rounded-xl hover:border-current		border p-2 justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                          <button type="button" class=" hover:border-bs-black-primary swiper-button-next flex rounded-xl hover:border-current		border p-2 justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
                               <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
                                 <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                                 <span class="sr-only">Next</span>
@@ -591,7 +608,7 @@
                       </div>
                 </div>
 
-                <div class="swiper mySwiper md:h-[32rem] mb-10">
+                <div class="swiper swipperReview md:h-[32rem] mb-10">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div href="#" class="block max-w-sm p-[32px] bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
@@ -667,17 +684,15 @@
                   
                 </div>
 
-             
-
                 <div class="visible sm:hidden md:hidden lg:hidden xl:hidden flex justify-center items-center pb-4">
                   <div class="flex justify-end items-center gap-4">
-                    <button type="button" class="swiper-button-prev flex rounded-xl hover:border-current		 border p-2 justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <button type="button" class=" hover:border-bs-black-primary swiper-button-prev flex rounded-xl hover:border-current		 border p-2 justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
                       <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
                         <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
                         <span class="sr-only">Previous</span>
                     </span>
                     </button>          
-                    <button type="button" class="swiper-button-next flex rounded-xl hover:border-current		border p-2 justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <button type="button" class=" hover:border-bs-black-primary swiper-button-next flex rounded-xl hover:border-current		border p-2 justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
                         <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
                           <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                           <span class="sr-only">Next</span>
@@ -825,43 +840,32 @@
     });
     });
 </script>
-<script>
-  var splide = new Splide('.splide', {
-    type: 'loop',
-    perPage: 4,
-    autoplay: false,
-    pagination:false,
-    arrows:false,
-    gap:'0.4em',
-    breakpoints: {
-		640: {
-			perPage: 1,
-		},
-  }
-  });
 
-  splide.mount();
-</script>
 
 <script>
-  var splide = new Splide('.data-splice', {
-    type: 'loop',
-    perPage: 4,
-    autoplay: false,
-    pagination:false,
-    arrows:false,
-    gap:'0.4em',
+  var swiper = new Swiper(".swipperSuccessStory", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     breakpoints: {
-		640: {
-			perPage: 1,
-		},
-  }
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
   });
-
-  splide.mount();
 </script>
 <script>
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".swipperReview", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
