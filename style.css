@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 
+body{
+  background: linear-gradient(180deg, #F8F6EF 0%, #FFFFFF 100%);
+}
+
 .swiper-button-prev{
   position: relative !important; 
 }
@@ -20,6 +24,6 @@
 .swiper-button-next, .swiper-button-prev{
   width: 40px !important;
   height: 40px !important;
-  color: black;
+  color: black  ;
 
 }
