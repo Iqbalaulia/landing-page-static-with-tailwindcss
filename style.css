@@ -34,3 +34,25 @@ body{
 .swipper-success-story{
   height: 416px !important;
 }
+
+.icon-path {
+  transition: transform 0.3s;
+}
+
+.rotate-icon .icon-path {
+  transform: rotate(180deg);
+}
+
+.minus-red {
+  filter: invert(48%) sepia(100%) saturate(3358%) hue-rotate(337deg) brightness(111%) contrast(104%);
+}
+
+.plus-black{
+
+}
+
+@media only screen and (max-width: 600px) {
+  .swiper-slide{
+    margin-right: 0px !important;
+  }
+}

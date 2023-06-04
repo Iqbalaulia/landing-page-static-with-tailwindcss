@@ -312,42 +312,58 @@
       <div class="flex items-center justify-center">
           <div class="w-full sm:w-[818px] md:w-[818px] lg:w-[818px] xl:w-[818px] justify-center" >
               <div class="hidden p-4 rounded-lg bg-bs-white-primary dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
-                  <div id="accordion-flush-heading-1" class="accordion-header cursor-pointer">
-                    <div class=" flex items-center justify-between w-full py-5 font-semibold text-left text-bs-black-primary border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
-                      <span class="text-[20px] text-bs-black-primary">What is Etsy</span>
-                      <i class="fas fa-minus"></i>
-                    </div>
+                
+              <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
+                <h2 id="accordion-flush-heading-1">
+                  <button type="button" class="accordion-icon flex items-center justify-between w-full py-5 font-semibold text-left text-bs-black-primary border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1">
+                    <span class="text-[18] sm:text-[20px] md:text-[20px] lg:text-[20px] xl:text-[20px] text-bs-black-primary">What is Etsy</span>
+                    <svg data-accordion-icon  fill="none" stroke="currentColor" stroke-width="1.5" class="w-6 h-6" id="plus-minus-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path stroke-linecap="round" class="icon-path" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                    </svg>                  
+                  </button>
+                  
+                </h2>
+                <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                  <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-bs-black-secondary font-normal leading-[26px] text-[16px] sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px]">Odio aliquam arcu arcu dictumst justo eu placerat ornare purus. Quam ultrices felis amet eu mauris. Odio aliquam arcu arcu dictumst.</p>
                   </div>
-                  <div id="accordion-flush-body-1" class="overflow-hidden accordion-content" aria-labelledby="accordion-flush-heading-1">
-                    <div class="py-2 border-b border-gray-200 dark:border-gray-700">
-                      <p class="mb-2 text-bs-black-secondary font-normal leading-[26px] text-[16px] sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px]">Odio aliquam arcu arcu dictumst justo eu placerat ornare purus. Quam ultrices felis amet eu mauris. Odio aliquam arcu arcu dictumst.</p>
-                    </div>
+                </div>
+                <h2 id="accordion-flush-heading-2">
+                  <button type="button" class="accordion-icon_1 flex items-center justify-between w-full py-5 font-semibold text-left text-bs-black-primary border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-1">
+                    <span class="text-[18] sm:text-[20px] md:text-[20px] lg:text-[20px] xl:text-[20px] text-bs-black-primary">What is Etsyfile available?</span>
+                    <svg data-accordion-icon  fill="none" stroke="currentColor" stroke-width="1.5" class="w-6 h-6" id="plus-minus-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path stroke-linecap="round" class="icon-path" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                    </svg>                          
+                  </button>
+                </h2>
+                <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                  <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-bs-black-secondary font-normal leading-[26px] text-[16px] sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px]">Odio aliquam arcu arcu dictumst justo eu placerat ornare purus. Quam ultrices felis amet eu mauris. Odio aliquam arcu arcu dictumst.</p>
+  
                   </div>
-                  <div id="accordion-flush-heading-2" class="accordion-header cursor-pointer">
-                    <button type="button" class="flex items-center justify-between w-full py-5 font-semibold text-left text-bs-black-primary border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
-                      <span class="text-[20px] text-bs-black-primary">Am I in risk for using this service?</span>
-                      <i class="fas fa-plus"></i>                   
-                    </button>
-                  </div>
-                  <div id="accordion-flush-body-2" class="overflow-hidden accordion-content" aria-labelledby="accordion-flush-heading-2">
-                     <div class="py-2 border-b border-gray-200 dark:border-gray-700">
-                      <p class="mb-2 text-bs-black-secondary font-normal leading-[26px] text-[16px] sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px]">Odio aliquam arcu arcu dictumst justo eu placerat ornare purus. Quam ultrices felis amet eu mauris. Odio aliquam arcu arcu dictumst.</p>
-                    </div>
-                  </div>
-                  <div id="accordion-flush-heading-3" class="accordion-header cursor-pointer">
-                    <button type="button" class="flex items-center justify-between w-full py-5 font-semibold text-left text-bs-black-primary border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
-                      <span class="text-[20px] text-bs-black-primary">What are the differences between Flowbite and Tailwind UI?</span>
-                      <i class="fas fa-plus"></i>                   
-                    </button>
-                  </div>
-                  <div id="accordion-flush-body-3" class="overflow-hidden accordion-content" aria-labelledby="accordion-flush-heading-3">
-                    <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                        <p class="mb-2 text-bs-black-secondary font-normal leading-[26px] text-[16px] sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px]">Odio aliquam arcu arcu dictumst justo eu placerat ornare purus. Quam ultrices felis amet eu mauris. Odio aliquam arcu arcu dictumst.</p>
-                    </div>
+                </div>
+                <h2 id="accordion-flush-heading-3">
+                  <button type="button" class="accordion-icon_2 flex items-center justify-between w-full py-5 font-semibold text-left text-bs-black-primary border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-1">
+                    <span class="text-[18] sm:text-[20px] md:text-[20px] lg:text-[20px] xl:text-[20px] text-bs-black-primary">What is Etsy this service?</span>
+                    <svg data-accordion-icon  fill="none" stroke="currentColor" stroke-width="1.5" class="w-6 h-6" id="plus-minus-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path stroke-linecap="round" class="icon-path" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                    </svg>     
+                  </button>
+                </h2>
+                <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                  <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                    <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                      <li><a href="https://flowbite.com/pro/" class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                      <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
+
+                </div>
               <div class="hidden p-4 rounded-lg bg-bs-white-primary dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
                 <p class="text-sm text-gray-500 dark:text-gray-400">Odio aliquam arcu arcu dictumst justo eu placerat ornare purus. Quam ultrices felis amet eu mauris. Odio aliquam arcu arcu dictumst.</p>
               </div>
@@ -357,10 +373,12 @@
               
           </div>
       </div>  
+
+      
     </div>
   </section>
 
-  <section class="teams bg-bs-white-primary pb-0 sm:pb-10 md:pb-10 lg:pb-10 xl:pb-10 pt-[120px]">
+  <section class="teams bg-bs-white-primary pb-0 sm:pb-10 md:pb-10 lg:pb-10 xl:pb-10 pt-[10px] sm:pt-[120px] md:pt-[120px] lg:pt-[120px] xl:pt-[120px]">
     <div class="container mx-auto p-4">
       <h2 class="text-center text-bs-black-primary font-semibold text-[32px] sm:text-[56px] md:text-[56px] lg:text-[56px] xl:text-[56px] leading-[64px]">Meet Our Meet</h2>
       <div class="flex justify-center text-center mt-[20px]">
@@ -401,7 +419,7 @@
     </div>
   </section>
 
-  <section class="we-work bg-bs-white-primary pb-10 pt-[120px]">
+  <section class="we-work bg-bs-white-primary pb-10 pt-[10px] sm:pt-[120px] md:pt-[120px] lg:pt-[120px] xl:pt-[120px]">
     <div class="container mx-auto p-4 sm:p-4 md:p-4 lg:-10 xl:p1-10">
       <div class="content">
           <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ">
@@ -410,22 +428,22 @@
               <p for="" class=" mt-4 text-bs-black-secondary font-normal text-[16px] sm:text-lg md:text-lg lg:text-lg xl:text-lg w-full sm:w-[505px] md:w-[505px] lg:w-[505px] xl:w-[505px]	leading-6	">Odio aliquam arcu arcu dictumst justo eu placerat ornare purus. Quam ultrices felis amet eu mauris. </p>
             </div>
              <div class="w-full mt-[32px] sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0">
-               <div class="bg-bs-background-bg_1 flex justify-start  rounded-xl mb-[32px] p-2 sm:p-[12px] md:p-[12px] lg:p-[12px] xl:p-[12px]">
+               <div class="bg-bs-background-bg_1 flex justify-start  rounded-xl mb-[20px] sm:mb-[32px] md:mb-[32px] lg:mb-[32px] xl:mb-[32px] p-2 sm:p-[12px] md:p-[12px] lg:p-[12px] xl:p-[12px]">
                   <div class="flex items-center gap-5">
                     <img class="" src="./src/assets/icons/ic_fast.svg" alt="money">
-                    <label for=""  class="font-semibold text-bs-black-primary text-[18px] sm:text-3xl md:text-3xl xl:text-3xl lg:text-3xl">Fast Etsy Ranking</label>
+                    <label for=""  class="font-semibold text-bs-black-primary text-[20px] sm:text-3xl md:text-3xl xl:text-3xl lg:text-3xl">Fast Etsy Ranking</label>
                   </div>
                </div>
-              <div class="bg-bs-background-bg_1 flex justify-start rounded-xl mb-[32px]  p-2 sm:p-[12px] md:p-[12px] lg:p-[12px] xl:p-[12px]">
+              <div class="bg-bs-background-bg_1 flex justify-start rounded-xl mb-[20px] sm:mb-[32px] md:mb-[32px] lg:mb-[32px] xl:mb-[32px]  p-2 sm:p-[12px] md:p-[12px] lg:p-[12px] xl:p-[12px]">
                   <div class="flex items-center gap-4">
                     <img class="" src="./src/assets/icons/ic_artist.svg" alt="money">
-                    <label for=""  class="font-semibold text-bs-black-primary text-[18px] sm:text-3xl md:text-3xl xl:text-3xl lg:text-3xl">Artists</label>
+                    <label for=""  class="font-semibold text-bs-black-primary text-[20px] sm:text-3xl md:text-3xl xl:text-3xl lg:text-3xl">Artists</label>
                   </div>
                </div>
-                <div class="bg-bs-background-bg_1 flex justify-start rounded-xl mb-[32px]  p-2 sm:p-[12px] md:p-[12px] lg:p-[12px] xl:p-[12px]">
+                <div class="bg-bs-background-bg_1 flex justify-start rounded-xl mb-[0px] sm:mb-[32px] md:mb-[32px] lg:mb-[32px] xl:mb-[32px]  p-2 sm:p-[12px] md:p-[12px] lg:p-[12px] xl:p-[12px]">
                   <div class="flex items-center gap-4">
                     <img class="" src="./src/assets/icons/ic_pen-tool.svg" alt="money">
-                    <label for="" class="font-semibold text-bs-black-primary text-[18px] sm:text-3xl md:text-3xl xl:text-3xl lg:text-3xl	">Designers</label>
+                    <label for="" class="font-semibold text-bs-black-primary text-[20px] sm:text-3xl md:text-3xl xl:text-3xl lg:text-3xl	">Designers</label>
                   </div>
                </div>
             </div>
@@ -440,7 +458,7 @@
       <div id="success-story" class="relative w-full" data-carousel="slide">
         <div class="header-title grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 items-center mb-0 sm:mb-[64px] md:mb-[64px] lg:mb-[64px] xl:mb-[64px]">
           <div class="title w-100 col-span-2 text-center sm:text-left md:text-left lg:text-left xl:text-left">
-                <h2 for="" class="text-bs-black-primary font-semibold	text-[32px] sm:text-5xl md:text-xl lg:text-5xl xl:text-5xl leading-[38px]">Etsy Geeks Case Studies and Success Stories</h2>
+                <h2 for="" class="text-bs-black-primary font-semibold	text-[30px] sm:text-5xl md:text-xl lg:text-5xl xl:text-5xl leading-[38px] mb-[32px] sm:mb-0 md:mb-0 lg:mb-0 xl:mb-0">Etsy Geeks Case Studies and Success Stories</h2>
             </div>
             <div class="hidden sm:block md:block lg:block xl:block">
               <div class="flex justify-end items-center gap-4">
@@ -582,13 +600,13 @@
     </div>
   </section>
 
-  <section class="raving-reviews  ">
+  <section class="raving-reviews">
     <div class="container mx-auto p-4 sm:p-4 md:p-10 lg:-10 xl:p1-10 mt-10">
           <div class="reviews">
             <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
                 <div class="title flex justify-between items-center mb-10">
                       <div class="title">
-                        <h2 for="" class="text-bs-black-primary font-semibold	text-[32px] sm:text-[56px] md:text-[56px] lg:text-[56px] xl:text-[56px]	leading-[38px] sm:leading-[64px] md:leading-[64px] lg:leading-[64px] xl:leading-[64px] ">Read our Raving Reviews</h2>
+                        <h2 for="" class="text-bs-black-primary text-center sm:text-left md:text-left lg:text-left xl:text-left font-semibold	text-[32px] sm:text-[56px] md:text-[56px] lg:text-[56px] xl:text-[56px]	leading-[38px] sm:leading-[64px] md:leading-[64px] lg:leading-[64px] xl:leading-[64px] ">Read our Raving Reviews</h2>
                       </div>
                       <div class="hidden sm:block md:block lg:block xl:block">
                         <div class="flex justify-end items-center gap-4">
@@ -608,11 +626,11 @@
                       </div>
                 </div>
 
-                <div class="swiper swipperReview md:h-[32rem] mb-10">
+                <div class="swiper swipperReview md:h-[32rem] mb-12">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <div href="#" class="block max-w-sm p-[32px] bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
-                        <h5 class="font-semibold h-[224px] leading-[24px] text-sm sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px] text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
+                      <div href="#" class="block max-w-sm p-[16px] sm:p-[32px] md:p-[32px] lg:p-[32px] xl:p-[32px] bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
+                        <h5 class="font-semibold h-[140px] sm:h-[224px] md:h-[224px] lg:h-[224px] xl:h-[224px] leading-[24px] text-sm sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px] text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
                         <figcaption class="flex items-center justify-start space-x-3">
                           <img class="rounded-full w-9 h-9" src="./src/assets/images/rb_images_avatar-4.png" alt="profile picture">
                           <div class="space-y-0.5 font-medium dark:text-white text-left">
@@ -625,11 +643,11 @@
                         <img class="w-5 sm:w-11 md:w-5 lg:w-11 xl:w-11 h-5 sm:h-11 md:h-5 lg:h-11 xl:h-11" src="./src/assets/logo/ic_start.svg" alt="">
                         <a href="" class="text-bs-black-primary font-semibold	text-sm sm:text-lg md:text-sm lg:text-lg xl:text-lg underline	underline-offset-1">On BlackHatWorld.com</a>
                       </div>
-                    </div>
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                      <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
-                        <h5 class="font-semibold h-[224px] leading-[24px] text-sm sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px] text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.  Quam ultrices felis amet eu mauris.  Quam ultrices felis. </h5>
+                      <div href="#" class="block max-w-sm p-[16px] sm:p-[32px] md:p-[32px] lg:p-[32px] xl:p-[32px] bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
+                        <h5 class="font-semibold h-[140px] sm:h-[224px] md:h-[224px] lg:h-[224px] xl:h-[224px] leading-[24px] text-sm sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px] text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
                         <figcaption class="flex items-center justify-start space-x-3">
                           <img class="rounded-full w-9 h-9" src="./src/assets/images/rb_images_avatar-2.png" alt="profile picture">
                           <div class="space-y-0.5 font-medium dark:text-white text-left">
@@ -642,11 +660,11 @@
                         <img class="w-5 sm:w-11 md:w-5 lg:w-11 xl:w-11 h-5 sm:h-11 md:h-5 lg:h-11 xl:h-11" src="./src/assets/logo/ic_start.svg" alt="">
                         <a href="" class="text-bs-black-primary font-semibold	text-sm sm:text-lg md:text-sm lg:text-lg xl:text-lg underline	underline-offset-1">On BlackHatWorld.com</a>
                       </div>
-                    </div>
+                      </div>
                     </div>
                     <div class="swiper-slide">
-                       <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
-                        <h5 class="font-semibold h-[224px] leading-[24px] text-sm sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px] text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
+                      <div href="#" class="block max-w-sm p-[16px] sm:p-[32px] md:p-[32px] lg:p-[32px] xl:p-[32px] bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
+                        <h5 class="font-semibold h-[140px] sm:h-[224px] md:h-[224px] lg:h-[224px] xl:h-[224px] leading-[24px] text-sm sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px] text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
                             <figcaption class="flex items-center justify-start space-x-3">
                               <img class="rounded-full w-9 h-9" src="./src/assets/images/rb_images_avatar-3.png" alt="profile picture">
                               <div class="space-y-0.5 font-medium dark:text-white text-left">
@@ -659,11 +677,11 @@
                             <img class="w-5 sm:w-11 md:w-5 lg:w-11 xl:w-11 h-5 sm:h-11 md:h-5 lg:h-11 xl:h-11" src="./src/assets/logo/ic_start.svg" alt="">
                             <a href="" class="text-bs-black-primary font-semibold	text-sm sm:text-lg md:text-sm lg:text-lg xl:text-lg underline	underline-offset-1">On BlackHatWorld.com</a>
                           </div>
-                        </div>
+                      </div>
                     </div>
                     <div class="swiper-slide"> 
-                      <div href="#" class="block max-w-sm p-8 bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
-                          <h5 class="font-semibold h-[224px] leading-[24px] text-sm sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px] text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
+                      <div href="#" class="block max-w-sm p-[16px] sm:p-[32px] md:p-[32px] lg:p-[32px] xl:p-[32px] bg-bs-background-bg_1 rounded-lg  hover:bg-gray-100 ">
+                        <h5 class="font-semibold h-[140px] sm:h-[224px] md:h-[224px] lg:h-[224px] xl:h-[224px] leading-[24px] text-sm sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px] text-bs-black-primary dark:text-white mb-4">I'm happy with the improvement of my sales since I started subscribing to one of the packages the 50k- 100k Medium Competition Keyword. Amazing service for Etsy ranking.</h5>
                           <figcaption class="flex items-center justify-start space-x-3">
                             <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
                             <div class="space-y-0.5 font-medium dark:text-white text-left">
@@ -677,14 +695,12 @@
                           <a href="" class="text-bs-black-primary font-semibold	text-sm sm:text-lg md:text-sm lg:text-lg xl:text-lg underline	underline-offset-1">On BlackHatWorld.com</a>
                         </div>
                       </div>
-                </div>
-                  
+                    </div>
                   </div>
                   <div class="swiper-pagination"></div>
-                  
                 </div>
 
-                <div class="visible sm:hidden md:hidden lg:hidden xl:hidden flex justify-center items-center pb-4">
+                <div class="visible sm:hidden md:hidden lg:hidden xl:hidden flex justify-center items-center pb-4 mb-[56px]">
                   <div class="flex justify-end items-center gap-4">
                     <button type="button" class=" hover:border-bs-black-primary swiper-button-prev flex rounded-xl hover:border-current		 border p-2 justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
                       <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
@@ -823,22 +839,54 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <script>
-    const accordionHeader = document.querySelectorAll(".accordion-header");
-    accordionHeader.forEach((header) => {
-    header.addEventListener("click", function () {
-        const accordionContent = header.parentElement.querySelector(".accordion-content");
-        let accordionMaxHeight = accordionContent.style.maxHeight;
-        if (accordionMaxHeight == "0px" || accordionMaxHeight.length == 0) {
-        accordionContent.style.maxHeight = `${accordionContent.scrollHeight + 32}px`;
-        header.querySelector(".fas").classList.remove("fa-plus");
-        header.querySelector(".fas").classList.add("fa-minus fill-red-950");
-        } else {
-        accordionContent.style.maxHeight = `120px`;
-        header.querySelector(".fas").classList.add("fa-plus s");
-        header.querySelector(".fas").classList.remove("fa-minus fill-red-950");
-        }
-    });
-    });
+  const accordion = document.querySelector('.accordion-icon');
+  accordion.addEventListener('click', function() {
+    const icon = event.currentTarget.querySelector('.icon-path');
+      event.currentTarget.classList.toggle('opened');   
+    if (event.currentTarget.classList.contains('opened')) {
+     
+      icon.setAttribute('d', 'M18 12H6');
+      icon.classList.add('minus-red')
+      icon.classList.remove('plus-black')
+    } else {
+      icon.classList.add('plus-black')
+      icon.classList.remove('minus-red')
+      icon.setAttribute('d', 'M12 6v12m6-6H6');
+    }
+  });
+
+
+  const accordion_1 = document.querySelector('.accordion-icon_1');
+  accordion_1.addEventListener('click', function() {
+    const icon = event.currentTarget.querySelector('.icon-path');
+      event.currentTarget.classList.toggle('opened');   
+    if (event.currentTarget.classList.contains('opened')) {
+     
+      icon.setAttribute('d', 'M18 12H6');
+      icon.classList.add('minus-red')
+      icon.classList.remove('plus-black')
+    } else {
+      icon.classList.add('plus-black')
+      icon.classList.remove('minus-red')
+      icon.setAttribute('d', 'M12 6v12m6-6H6');
+    }
+  });
+
+  const accordion_2 = document.querySelector('.accordion-icon_2');
+  accordion_2.addEventListener('click', function() {
+    const icon = event.currentTarget.querySelector('.icon-path');
+      event.currentTarget.classList.toggle('opened');   
+    if (event.currentTarget.classList.contains('opened')) {
+     
+      icon.setAttribute('d', 'M18 12H6');
+      icon.classList.add('minus-red')
+      icon.classList.remove('plus-black')
+    } else {
+      icon.classList.add('plus-black')
+      icon.classList.remove('minus-red')
+      icon.setAttribute('d', 'M12 6v12m6-6H6');
+    }
+  });
 </script>
 
 
