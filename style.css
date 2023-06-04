@@ -27,6 +27,25 @@ body{
   color: black  ;
 }
 
+.swiper-button-prev-review{
+  position: relative !important; 
+}
+
+.swiper-button-next-review{
+  position: relative !important; 
+}
+
+.swiper-button-next-review:after, .swiper-button-prev-review:after{
+  font-size: 0 !important;
+}
+
+.swiper-button-next-review, .swiper-button-prev-review{
+  width: 40px !important;
+  height: 40px !important;
+  color: black  ;
+}
+
+
 .swiper-slide{
   margin-right: 32px !important;
 }
