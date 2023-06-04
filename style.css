@@ -11,6 +11,11 @@ body{
 .hover\:bg-gray-100:hover{
   background: linear-gradient(180deg, #F8F6EF 0%, #FFFFFF 100%) !important;
 }
+
+.bg-rb-secondary{
+  background: linear-gradient(180deg, #F8F6EF 0%, #FFFFFF 100%);
+}
+
 .swiper-button-prev{
   position: relative !important; 
 }
