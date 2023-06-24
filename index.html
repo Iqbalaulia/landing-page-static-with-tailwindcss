@@ -471,19 +471,19 @@
              <div class="w-full mt-[32px] sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0">
                <div class="bg-bs-background-bg_1 flex justify-start  rounded-xl mb-[20px] sm:mb-[32px] md:mb-[32px] lg:mb-[32px] xl:mb-[32px] p-2 sm:p-[12px] md:p-[12px] lg:p-[12px] xl:p-[12px]">
                   <div class="flex items-center gap-5">
-                    <img class="" src="./src/assets/icons/ic_fast.svg" alt="money">
+                    <img class="" src="./src/assets/icons/ic_fast.svg" width="54" height="54" alt="fast etsy ranking">
                     <label for=""  class="font-semibold text-bs-black-primary text-[20px] sm:text-xl md:text-2xl xl:text-3xl lg:text-3xl">Fast Etsy Ranking</label>
                   </div>
                </div>
               <div class="bg-bs-background-bg_1 flex justify-start rounded-xl mb-[20px] sm:mb-[32px] md:mb-[32px] lg:mb-[32px] xl:mb-[32px]  p-2 sm:p-[12px] md:p-[12px] lg:p-[12px] xl:p-[12px]">
                   <div class="flex items-center gap-4">
-                    <img class="" src="./src/assets/icons/ic_artist.svg" alt="money">
+                    <img class="" src="./src/assets/icons/ic_artist.svg" width="54" height="54" alt="artist">
                     <label for=""  class="font-semibold text-bs-black-primary text-[20px] sm:text-xl md:text-2xl xl:text-3xl lg:text-3xl">Artists</label>
                   </div>
                </div>
                 <div class="bg-bs-background-bg_1 flex justify-start rounded-xl mb-[0px] sm:mb-[32px] md:mb-[32px] lg:mb-[32px] xl:mb-[32px]  p-2 sm:p-[12px] md:p-[12px] lg:p-[12px] xl:p-[12px]">
                   <div class="flex items-center gap-4">
-                    <img class="" src="./src/assets/icons/ic_pen-tool.svg" alt="money">
+                    <img class="" src="./src/assets/icons/ic_pen-tool.svg" width="54" height="54" alt="designer">
                     <label for="" class="font-semibold text-bs-black-primary text-[20px] sm:text-xl md:text-2xl xl:text-3xl lg:text-3xl	">Designers</label>
                   </div>
                </div>
@@ -763,7 +763,7 @@
                 </a>
                 <label for="" class="text-white text-lg font-semibold	mt-5">Our Address:</label>
                 <p  class="md:leading-[16px] text-lg sm:text-lg md:text-[12px] lg: xl:text-lg text-bs-black-four font-normal backdrop-opacity-60	mt-1">Oudebrugsteeg 9, 1012 JN <br> Amsterdam, Netherlands</p>
-                <div class="mt-5 social-media grid grid-cols-3 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div class="mt-[30px] social-media grid grid-cols-3 gap-8 sm:gap-6 sm:grid-cols-3">
                   <div class="bg-bs-black-third p-4 sm:p-4 md:p-2 lg:p-4 xl:p-4 rounded-lg	">
                     <img src="./src/assets/icons/ic_twitter.svg" alt="logo twitter" class="w-[24px] h-[24px]">
                   </div>
@@ -851,7 +851,6 @@
                 </div>
             </div>
         </div>
-        
         <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 mt-10 ">
             <span class="flex items-center justify-center sm:justify-center md:flex-none  md:justify-center  lg:justify-start  xl:justify-start  text-xs sm:text-base md:text-base lg:text-base xl:text-base text-bs-black-four text-center sm:text-center dark:text-gray-400">© 2023 <a href="#" class="hover:underline">ProductName.com</a>. All Rights Reserved.
             </span>
@@ -861,125 +860,126 @@
         </div>
       </div>
   </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
-  const accordion = document.querySelector('.accordion-icon');
-  accordion.addEventListener('click', function() {
-    const icon = event.currentTarget.querySelector('.icon-path');
-      event.currentTarget.classList.toggle('opened');   
-    if (event.currentTarget.classList.contains('opened')) {
-     
-      icon.setAttribute('d', 'M18 12H6');
-      icon.classList.add('minus-red')
-      icon.classList.remove('plus-black')
-    } else {
-      icon.classList.add('plus-black')
-      icon.classList.remove('minus-red')
-      icon.setAttribute('d', 'M12 6v12m6-6H6');
-    }
-  });
+    const accordion = document.querySelector('.accordion-icon');
+    accordion.addEventListener('click', function() {
+      const icon = event.currentTarget.querySelector('.icon-path');
+        event.currentTarget.classList.toggle('opened');   
+      if (event.currentTarget.classList.contains('opened')) {
+      
+        icon.setAttribute('d', 'M18 12H6');
+        icon.classList.add('minus-red')
+        icon.classList.remove('plus-black')
+      } else {
+        icon.classList.add('plus-black')
+        icon.classList.remove('minus-red')
+        icon.setAttribute('d', 'M12 6v12m6-6H6');
+      }
+    });
 
-  const accordion_1 = document.querySelector('.accordion-icon_1');
-  accordion_1.addEventListener('click', function() {
-    const icon = event.currentTarget.querySelector('.icon-path');
-      event.currentTarget.classList.toggle('opened');   
-    if (event.currentTarget.classList.contains('opened')) {
-     
-      icon.setAttribute('d', 'M18 12H6');
-      icon.classList.add('minus-red')
-      icon.classList.remove('plus-black')
-    } else {
-      icon.classList.add('plus-black')
-      icon.classList.remove('minus-red')
-      icon.setAttribute('d', 'M12 6v12m6-6H6');
-    }
-  });
+    const accordion_1 = document.querySelector('.accordion-icon_1');
+    accordion_1.addEventListener('click', function() {
+      const icon = event.currentTarget.querySelector('.icon-path');
+        event.currentTarget.classList.toggle('opened');   
+      if (event.currentTarget.classList.contains('opened')) {
+      
+        icon.setAttribute('d', 'M18 12H6');
+        icon.classList.add('minus-red')
+        icon.classList.remove('plus-black')
+      } else {
+        icon.classList.add('plus-black')
+        icon.classList.remove('minus-red')
+        icon.setAttribute('d', 'M12 6v12m6-6H6');
+      }
+    });
 
-  const accordion_2 = document.querySelector('.accordion-icon_2');
-  accordion_2.addEventListener('click', function() {
-    const icon = event.currentTarget.querySelector('.icon-path');
-      event.currentTarget.classList.toggle('opened');   
-    if (event.currentTarget.classList.contains('opened')) {
-     
-      icon.setAttribute('d', 'M18 12H6');
-      icon.classList.add('minus-red')
-      icon.classList.remove('plus-black')
-    } else {
-      icon.classList.add('plus-black')
-      icon.classList.remove('minus-red')
-      icon.setAttribute('d', 'M12 6v12m6-6H6');
-    }
-  });
-    </script>
-    <script>
-    var swiper = new Swiper(".swipperSuccessStory", {
-      navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      breakpoints: {
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-          656:{
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-          768: {
-            slidesPerView: 2.5,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 3.5,
-            spaceBetween: 50,
-          },
-        },
+    const accordion_2 = document.querySelector('.accordion-icon_2');
+    accordion_2.addEventListener('click', function() {
+      const icon = event.currentTarget.querySelector('.icon-path');
+        event.currentTarget.classList.toggle('opened');   
+      if (event.currentTarget.classList.contains('opened')) {
+      
+        icon.setAttribute('d', 'M18 12H6');
+        icon.classList.add('minus-red')
+        icon.classList.remove('plus-black')
+      } else {
+        icon.classList.add('plus-black')
+        icon.classList.remove('minus-red')
+        icon.setAttribute('d', 'M12 6v12m6-6H6');
+      }
     });
     </script>
     <script>
-      var swiper = new Swiper(".swipperReview", {
-        navigation: {
-            nextEl: ".swiper-button-next-review",
-            prevEl: ".swiper-button-prev-review",
-          },
-        breakpoints: {
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 0,
-            },
-            656:{
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-            768: {
-              slidesPerView: 2.5,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 50,
-            },
-          },
-      });
+          var swiper = new Swiper(".swipperSuccessStory", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            breakpoints: {
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 0,
+                },
+                656:{
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+                768: {
+                  slidesPerView: 2.5,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 3.5,
+                  spaceBetween: 50,
+                },
+              },
+          });
     </script>
     <script>
-      const buttonResponsive = document.querySelector('.button-responsive');
-      buttonResponsive.addEventListener('click',function(){
-        if(document.getElementById("overlay").style.display === "block"){
-          document.getElementById("overlay").style.display = "none";
-        }else{
-          document.getElementById("overlay").style.display = "block";
-          document.getElementById('navbar-sticky').style.display ='block';
-        }
-      });
+        var swiper = new Swiper(".swipperReview", {
+          navigation: {
+              nextEl: ".swiper-button-next-review",
+              prevEl: ".swiper-button-prev-review",
+            },
+          breakpoints: {
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+              },
+              656:{
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+              768: {
+                slidesPerView: 2.5,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            },
+        });
+    </script>
+    <script>
+        const buttonResponsive = document.querySelector('.button-responsive');
+        buttonResponsive.addEventListener('click',function(){
+          if(document.getElementById("overlay").style.display === "block"){
+            document.getElementById("overlay").style.display = "none";
+          }else{
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById('navbar-sticky').style.display ='block';
+          }
+        });
 
-      function off() {
-        document.getElementById("overlay").style.display = "none";
-        document.getElementById('navbar-sticky').style.display ='none';
-      }
+        function off() {
+          document.getElementById("overlay").style.display = "none";
+          document.getElementById('navbar-sticky').style.display ='none';
+        }
     </script> 
   </body>
 </html>
