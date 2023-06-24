@@ -30,6 +30,7 @@ export default {
 						primary: "#110F14",
 						secondary: "#424C5A",
 						third: "#1d1b20",
+						four:"#A09FA1"
 					},
 					red: {
 						primary: "#FE5842",
